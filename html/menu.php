@@ -17,7 +17,7 @@
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         
-          <a class="dropdown-item" href="../contenido/personajes.php">Todos los personajes</a>
+          <a class="dropdown-item" href="contenido/personajes.php">Todos los personajes</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="../Examen/Seccion3.php">Acerca de</a>
           <a class="dropdown-item" href="../Examen/Seccion4.php">Servicios</a>
