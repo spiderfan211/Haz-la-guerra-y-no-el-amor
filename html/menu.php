@@ -1,5 +1,5 @@
 
-<nav class="navbar smart-scroll navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <a class="navbar-brand" href="../index.php"><img src="../imagenes/logo.png"   width="60" ></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -12,16 +12,18 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Examen 1º trimestre
+          Personajes
         </a>
+        
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+          <a class="dropdown-item" href="../contenido/personajes.php">Todos los personajes</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="../Examen/Seccion3.php">Acerca de</a>
           <a class="dropdown-item" href="../Examen/Seccion4.php">Servicios</a>
           <a class="dropdown-item" href="../Examen/Seccion5.php">Tarifas</a>
           <a class="dropdown-item" href="../Examen/Seccion6.php">Multimedia</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="../Examen/Seccion7.php">Contacta con nosotros</a>
-        </div>
+          </div>
       </li>
 
       <li class="nav-item dropdown">
@@ -42,7 +44,6 @@
    
   </div>
 </nav>
-
 
 
 
