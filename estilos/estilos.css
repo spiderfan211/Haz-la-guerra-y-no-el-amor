@@ -1,5 +1,3 @@
-
-
 h1
 {
   font-size: 32px;
@@ -16,14 +14,7 @@ h1
   background-image:url(images/background-h1-wood.jpg);  
 }
 
-.notice{
-    width: 100%;
-    background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
-    text-align: center;
-}
-
-
-.tabla{
+.tabla_personajes{
     margin: auto;
     width:100%;
 }
@@ -52,16 +43,24 @@ h1
     width: 100%;
 }
 
-
-.pie{
-    text-align: center;
-}
-
-form {
-    display:inline-block;
-}
-
 i{
     color: #CB78F0;
 }
+
+.bloqueimagenes {
+    width: 100%;
+}
+
+.bloqueimagenes div{
+    margin: 5%;
+    float: left;
+    width: 20%;
+}
+
+.bloqueimagenes div img {
+    width: 100%;
+    height: auto;
+}
+
+
 
