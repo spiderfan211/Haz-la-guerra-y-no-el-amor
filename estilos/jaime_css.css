@@ -48,14 +48,27 @@ h1
 i{
     color: #CB78F0;
 }
-
+body{
+    background-image: linear-gradient(to bottom, #DAADF9 , #F5F9AD)
+    
+}
 
 .seccion{
     
         font-family: 'Lobster';
-        text-align:center;
         border:1px dotted #000;
-        padding:25px;
-
+        width: 25%;
+        padding: 200px;
+        margin:auto;
+        background-image: linear-gradient(to bottom, #DDFBFF , #D2F7BF);
+        text-align: justify;
     }
+
     
+.seccion h2{
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(214, 138, 204);
+    text-align:center;
+    
+}
