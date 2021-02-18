@@ -39,7 +39,9 @@
                     <div>
                         <img src="../imagenes/paladin.gif" alt="Ornsmough">
                         <br>
+                        <a href="pennydumb.html">
                             <h2>Ornsmough</h2>
+                        </a>
                         <p>Vanidad y poder</p>
                     </div>
                 </div>
