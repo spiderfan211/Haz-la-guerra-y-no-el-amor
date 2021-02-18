@@ -1,12 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <meta charset="utf-8">
-    <title>Haz la guerra y no el amor</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <?php include("../html/meta.php")?>
+    <?php include("../html/menu.php")?>
     <link rel="stylesheet" href="../estilos/jaime_css.css">
         
     </head>
