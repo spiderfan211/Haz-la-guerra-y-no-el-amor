@@ -1,0 +1,68 @@
+body {
+
+  background-image: url(../imagenes/fondo.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: #66999;
+	
+}
+
+
+
+.seccion {
+  display: block;
+ position: absolute;
+ top: 9%;
+ left: 15%;
+ right:5%;
+ padding: 16px;
+ background: #fff;
+ color: #333;
+ z-index:1002;
+ opacity: 0.55;
+ overflow: auto;
+
+}
+
+.titulo
+{
+	background-color: rgb(207, 24, 24);
+	position:fixed;
+}
+
+
+
+.smart-scroll{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+  }
+  .scrolled-down{
+	 transform:translateY(-100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+	 transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+
+
+  /* Scroll 4 */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+	background-color:rgba(10, 10, 10, 0.2);;
+  }
+  ::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.4);
+  }
+  ::-webkit-scrollbar-thumb {
+	background-color: #5332e7;
+	background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
+	border-radius: 10px;
+  }
+  
