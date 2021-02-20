@@ -22,7 +22,7 @@
                     <div>
                         <img src="../imagenes/veigar final boss.gif" alt="Ganon">
                         <br>
-                        <a href="ganon.html">
+                        <a href="ganon.php">
                             <h2>Ganon (imagen temporal)</h2>
                         </a>
                         <p>Ganon, nuestro protagonista</p>
@@ -31,7 +31,7 @@
                     <div>
                         <img src="../imagenes/monja3.gif" alt="Madre Teresa">
                         <br>
-                        <a href="madre_teresa.html"> 
+                        <a href="madre_teresa.php"> 
                             <h2>Madre Teresa</h2>
                         </a>
                         <p>Las apariencias engañan</p>
@@ -39,7 +39,7 @@
                     <div>
                         <img src="../imagenes/paladin.gif" alt="Ornsmough">
                         <br>
-                        <a href="pennydumb.html">
+                        <a href="pennydumb.php">
                             <h2>Ornsmough</h2>
                         </a>
                         <p>Vanidad y poder</p>
@@ -54,7 +54,7 @@
                     <div>
                         <img src="../imagenes/arlequíin.gif" alt="Payaso terrorífico">
                         <br>
-                        <a href="pennydumb.html"> 
+                        <a href="pennydumb.php"> 
                             <h2>Pennydumb</h2>
                         </a>
                         <p>Ruina y caos</p>
