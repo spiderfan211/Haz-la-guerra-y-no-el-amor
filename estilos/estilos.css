@@ -45,3 +45,17 @@ h1
     width: 100%;
 }
 
+
+.integrantes{
+    vertical-align: middle;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.integrantes th{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}

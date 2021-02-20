@@ -7,17 +7,14 @@
         <link rel="stylesheet" href="../estilos/estilos.css">
         
     </head>
-   
     
     <body>
-
         <div id="texto" class="seccion">
 
-           
-        <p>prueba</p>
-        
-        
+            
+            
+            
+            
         </div>
-
     </body>
 </html>

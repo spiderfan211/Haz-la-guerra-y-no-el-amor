@@ -20,7 +20,7 @@
           <a class="dropdown-item" href="../contenido/personajes.php">Todos los personajes</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="../contenido/ganon.php">El protagonista</a>
-          <a class="dropdown-item" href="../contenido/monja.php">Madre Teresa</a>
+          <a class="dropdown-item" href="../contenido/madre_teresa.php">Madre Teresa</a>
           <a class="dropdown-item" href="../contenido/ornsmough.php">Ornsmough</a>
           <a class="dropdown-item" href="../contenido/pennydumb.php">Pennydumb</a>
           </div>
