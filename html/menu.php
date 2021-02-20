@@ -17,7 +17,7 @@
         
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
         
-          <a class="dropdown-item" href="contenido/personajes.php">Todos los personajes</a>
+          <a class="dropdown-item" href="../contenido/personajes.php">Todos los personajes</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="../contenido/ganon.php">El protagonista</a>
           <a class="dropdown-item" href="../contenido/monja.php">Madre Teresa</a>
@@ -26,10 +26,18 @@
           </div>
       </li>
 
-      <li class="nav-item">    
-      <a class="nav-link" href="../contenido/historia.php">La historia hasta ahora</a></a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Historia y facciones
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        
+          <a class="dropdown-item" href="../contenido/historia.php">La historia hasta ahora</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="../contenido/alianza.php">La Alianza</a>
+          <a class="dropdown-item" href="../contenido/orden.php">La Orden</a>
+        </div>
       </li>
-      
       <li class="nav-item">    
       <a class="nav-link" href="../contenido/nosotros.php">Acerca de nosotros</a>
       </li>
