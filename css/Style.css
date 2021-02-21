@@ -64,8 +64,9 @@ body {
   
   .gallery{
 	position:relative;
-	right:20%;
-	left:20%;
+	margin:auto;
+	
+	left: 50%; /* Buscamos el centro vertical (relativo) del navegador */
 	height:100%;
 	width:100%;
   }
