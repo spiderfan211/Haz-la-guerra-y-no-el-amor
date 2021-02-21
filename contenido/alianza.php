@@ -11,6 +11,13 @@
     <body>
         <div id="texto" class="seccion">
 
+
+
+
+
+
+
+
             <h2>LA ALIANZA</h2>
             <p><br>
                 Con el bien del pueblo en mente, la Alianza solo quiere conseguir la Gema para evitar que la Orden consiga su objetivo de dominación total. 
