@@ -13,7 +13,7 @@ body {
 	position: absolute;
 	height: auto;
 	
-	top: 9%;
+	top: 25%;
 	left: 30%;
 	right:30%;
 	bottom:5%;
@@ -183,6 +183,6 @@ body {
   }
 
   .integrantes img{
-	  width: 20%;
+	  width: 50%;
   }
    

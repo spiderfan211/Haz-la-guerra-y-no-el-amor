@@ -33,24 +33,35 @@
                 </tr>
                 <tr>
                     <td>
-                    <p>--------------------</p>
+                    
                     </td>
                     <td>
-                    <p>--------------------</p> 
+                        
                     </td>
                     <td>
-                    <p>--------------------</p>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td style="padding-left:2%;padding-right:2%;">
+                        <DIV STYLE="background-color:black; height:1px; left:10%; ">
+                    </td>
+                    <td style="padding-left:2%;padding-right:2%;">
+                        <DIV STYLE="background-color:black; height:1px; left:10%; ">
+                    </td>
+                    <td style="padding-left:2%;padding-right:2%;">
+                        <DIV STYLE="background-color:black; height:1px; left:10%; ">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                    <img href="../imagenes/emilio.jpg" alt="emilio">
+                    <img src="../imagenes/emilio.jpg" alt="emilio">
                     </td>
                     <td>
                         <img src="../imagenes/josemanuel.jpg" alt="josemanuel">
                     </td>
                     <td>
-                        <img href="../imagenes/jaime.jpg" alt="jaime">
+                        <img src="../imagenes/fondo.png" alt="jaime">
                     </td>
                 </tr>
             </table>
