@@ -33,16 +33,28 @@
                 </tr>
                 <tr>
                     <td>
-                    <img href="../imagenes/emilio.png" alt="emilio">
+                    <p>--------------------</p>
                     </td>
                     <td>
-                        <img href="../imagenes/josemanuel.png" alt="josemanuel">
+                    <p>--------------------</p> 
                     </td>
                     <td>
-                        <img href="../imagenes/jaime.png" alt="jaime">
+                    <p>--------------------</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <img href="../imagenes/emilio.jpg" alt="emilio">
+                    </td>
+                    <td>
+                        <img src="../imagenes/josemanuel.jpg" alt="josemanuel">
+                    </td>
+                    <td>
+                        <img href="../imagenes/jaime.jpg" alt="jaime">
                     </td>
                 </tr>
             </table>
+            
             
             
             

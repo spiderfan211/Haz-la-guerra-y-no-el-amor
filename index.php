@@ -8,7 +8,7 @@
   <body>
     
   
-    <div id="texto" class="seccion">
+    <div  class="inicio">
     
 
 
@@ -33,7 +33,7 @@
                         <a href="./contenido/alianza.php"><img src="./imagenes/alianza.png" id="clipped"></a>
                     </div>
 
-                <div class = "shadow"></div>
+                
             </div>
  
 

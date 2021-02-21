@@ -5,11 +5,20 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-color: #66999;
 	text-align: center;
 }
 
-
+.inicio {
+	display: block;
+	position: absolute;
+	height: auto;
+	
+	top: 9%;
+	left: 30%;
+	right:30%;
+	bottom:5%;
+	background: #9274ac00;
+   }
 
 .seccion {
  display: block;
@@ -20,7 +29,7 @@ body {
  padding: 16px;
  background: #9274AC;
  color: #333;
- z-index:1002;
+ overflow: auto;
  opacity: 0.8;
  bottom: 5%;
 }
@@ -54,35 +63,25 @@ body {
   :root{
 	--width: 100%;
 	--height: 100%;
-	--border-width: 200px;
-	--border-height: 200px;
+	--border-width: auto;
+	--border-height: auto;
   
   }
   
   
   
   .gallery{
-	position:fixed;
-	margin-left:20%;
-	height:50%;
-	width:50%;
+	position:relative;
+	height:100%;
+	width:100%;
   }
   
   .gallery:after{
 	content:'';
   }
   
-  .shadow{
-	position: absolute;
-	top: 500px;
-	left: 100px;
-	width: 500px;
-	height: 40px;
-	border-radius: 50%;
-	background: radial-gradient(#805d78,rgba(0,0,0,0) 70%);
-  }
   
-  .seccion .gallery img{
+  .gallery img{
 	width:var(--width);
 	height:var(--height);
   }
@@ -182,4 +181,8 @@ body {
 	  left:150px;
 	}
   }
-  
+
+  .integrantes img{
+	  width: 20%;
+  }
+   
