@@ -10,16 +10,8 @@
     
     <body>
         <div id="texto" class="seccion">
-
-
-
-
-
-
-
-
             <h2>LA ALIANZA</h2>
-            <p><br>
+            <p class="parrafocentrado"><br>
                 Con el bien del pueblo en mente, la Alianza solo quiere conseguir la Gema para evitar que la Orden consiga su objetivo de dominación total. 
                 <br>
                 Con el poder de la Gema en sus manos, la Alianza haría prosperar un Reino en paz, que evolucionaría con el tiempo y se convertiría en la primera República de la Gema, de carácter demócrata y humanitario.

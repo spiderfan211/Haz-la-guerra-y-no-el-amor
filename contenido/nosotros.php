@@ -31,6 +31,17 @@
                         Jaime Carmona Martínez
                     </th>
                 </tr>
+                <tr>
+                    <td>
+                    <img href="../imagenes/emilio.png" alt="emilio">
+                    </td>
+                    <td>
+                        <img href="../imagenes/josemanuel.png" alt="josemanuel">
+                    </td>
+                    <td>
+                        <img href="../imagenes/jaime.png" alt="jaime">
+                    </td>
+                </tr>
             </table>
             
             

@@ -44,13 +44,7 @@ h1
 i{
     color: rgb(87, 21, 126);
 }
-/*
-body{
-    background-image: linear-gradient(to bottom, #DAADF9 , #F5F9AD)
-    
-}
-Comentado por ahora porque pisa el fondo general de la página
-*/      
+   
 .seccion{
     
         font-family: 'Lobster';
