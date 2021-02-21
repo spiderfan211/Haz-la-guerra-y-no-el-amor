@@ -27,7 +27,7 @@
             álgido de su historia, en plena guerra civil, el Reino de la Gema. 
             ¿Podrá alzarse con la victoria y empuñar el poder solo? O necesitará 
             aliarse con algún bando en su camino a la dominación total?
- 
+  
         </p>
         
         
