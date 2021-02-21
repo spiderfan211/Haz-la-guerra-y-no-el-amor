@@ -44,8 +44,14 @@ h1
 i{
     color: rgb(87, 21, 126);
 }
-   
-.seccion{
+/*
+body{
+    background-image: linear-gradient(to bottom, #DAADF9 , #F5F9AD)
+    
+}
+Comentado por ahora porque pisa el fondo general de la página
+*/      
+.seccion {
     
         font-family: 'Lobster';
         border:1px dotted #000;
@@ -58,9 +64,14 @@ i{
 
     
 .seccion h2{
+    font-family: 'Lobster';
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted rgb(87, 21, 126);
     text-align:center;
     
+}
+.parrafocentrado{
+    font-family: 'Lobster';
+    color: rgb(147, 65, 255);
 }
