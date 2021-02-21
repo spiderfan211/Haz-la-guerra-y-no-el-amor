@@ -12,7 +12,7 @@ body {
 
 
 .seccion {
-  display: block;
+ display: block;
  position: absolute;
  top: 9%;
  left: 10%;
@@ -22,8 +22,7 @@ body {
  color: #333;
  z-index:1002;
  opacity: 0.8;
- overflow: auto;
-	bottom: 5%;
+ bottom: 5%;
 }
 
 .titulo
@@ -63,12 +62,10 @@ body {
   
   
   .gallery{
-	position:relative;
-	margin:auto;
-	
-	left: 50%; /* Buscamos el centro vertical (relativo) del navegador */
-	height:100%;
-	width:100%;
+	position:fixed;
+	margin-left:20%;
+	height:50%;
+	width:50%;
   }
   
   .gallery:after{
