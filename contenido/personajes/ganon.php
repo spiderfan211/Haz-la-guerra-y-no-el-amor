@@ -10,7 +10,7 @@
    
     
     <body>
-
+ 
         <div id="texto" class="seccion">
 
         <h1 class="nombrepersonaje">
