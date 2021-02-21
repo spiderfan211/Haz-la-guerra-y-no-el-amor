@@ -11,7 +11,22 @@
     <body>
         <div id="texto" class="seccion">
 
+            <h1 class="nombrepersonaje">
+                La Madre Teresa
+            </h1>
             
+            <p class="parrafopersonaje">
+                <img class="imagenparrafo" src="../../imagenes/monja2.gif" alt="monja">
+                La Madre Teresa era la monja superiora de un 
+                convento del Reino de la Gema. Consagró su vida a su fe 
+                y a la armonía y paz de sus hermanas. Sin embargo, no 
+                todo es lo que parece, como tampoco lo es Teresa...
+                <br>
+                Como enemigo dentro del juego, la Madre Teresa tendrá dos 
+                fases: una en la que es dulce, compasiva y quiere ayudar a 
+                Ganon, y otra cruel, sádica y monstruosa, provocada por un 
+                ataque directo de nuestro personaje.
+            </p> 
             
             
             
