@@ -9,19 +9,19 @@ body {
 }
 
 .inicio {
-	display: block;
-	position: absolute;
-	height: auto;
 	
-	top: 25%;
-	left: 30%;
-	right:30%;
-	bottom:5%;
+	position: fixed;
+	height: 550px;
+	width: 550px;
+	
 	background: #9274ac00;
    }
 
 .container {
- 
+	
+	
+	
+	
  background: #9274AC;
  color: #333;
  overflow: auto;
@@ -52,7 +52,13 @@ body {
 	border-radius: 10px;
   }
   
-
+  html,body {
+	
+	height:100%;
+	width:100%;
+	position:relative;
+	
+  }
 
 
   :root{
@@ -66,6 +72,7 @@ body {
   
   
   .gallery{
+
 	position:relative;
 	height:100%;
 	width:100%;

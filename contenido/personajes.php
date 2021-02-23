@@ -10,7 +10,7 @@
     
     <body>
 
-        <div class="container pt-5 pb-5 my-4 ">
+        <div class="container overflow-auto pt-5 mb-5 my-4 ">
 
             <h1> PERSONAJES Y ENEMIGOS </h1>
 
@@ -20,9 +20,9 @@
                 <div class="row">
                     
                     <div class="col-sm" >
-                        <img src="../imagenes/veigar final boss.gif" alt="Ganon">
+                        <img class="col-sm" src="../imagenes/veigar final boss.gif" alt="Ganon">
                         <br>
-                        <a href="./personajes/ganon.php">
+                        <a class="col-sm"href="./personajes/ganon.php">
                             <h2>Ganon (imagen temporal)</h2>
                         </a>
                         <p>Ganon, nuestro protagonista</p>
