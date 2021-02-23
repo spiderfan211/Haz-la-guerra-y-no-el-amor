@@ -11,7 +11,7 @@
     
     <body>
  
-        <div id="texto" class="seccion">
+        <div class="container pt-5 pb-5 my-4 ">
 
             <h1 class="nombrepersonaje">
                 Ganon, el conquistador

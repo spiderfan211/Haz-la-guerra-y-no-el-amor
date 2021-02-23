@@ -9,7 +9,7 @@
     </head>
     
     <body>
-        <div id="texto" class="seccion">
+        <div class="container pt-5 pb-5 my-4 ">
 
             <h2>
                 Trabajo en SCRUM de estudiantes de primer año de DAM en el CES Lope de Vega, en Córdoba
@@ -19,52 +19,30 @@
 
             <h2>Integrantes del equipo</h2>
             <br><br><br><br>
-            <table class="integrantes">
-                <tr>
-                    <th>
+            <div class="row">
+                
+                    <div class="col-sm">
                         Emilio Calvo de Mora Mármol
-                    </th>
-                    <th>
+                    </div>
+                    <div class="col-sm">
                         Jose Manuel Almagro Domínguez
-                    </th>
-                    <th>
+                    </div>
+                    <div class="col-sm">
                         Jaime Carmona Martínez
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                    
-                    </td>
-                    <td>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
-                <tr>
-                    <td style="padding-left:2%;padding-right:2%;">
-                        <DIV STYLE="background-color:black; height:1px; left:10%; ">
-                    </td>
-                    <td style="padding-left:2%;padding-right:2%;">
-                        <DIV STYLE="background-color:black; height:1px; left:10%; ">
-                    </td>
-                    <td style="padding-left:2%;padding-right:2%;">
-                        <DIV STYLE="background-color:black; height:1px; left:10%; ">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+                    </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm">
                     <img src="../imagenes/emilio.jpg" alt="emilio">
-                    </td>
-                    <td>
-                        <img src="../imagenes/josemanuel.jpg" alt="josemanuel">
-                    </td>
-                    <td>
-                        <img src="../imagenes/fondo.png" alt="jaime">
-                    </td>
-                </tr>
-            </table>
+                </div>
+                <div class="col-sm">
+                    <img src="../imagenes/josemanuel.jpg" alt="josemanuel">
+                </div>
+                <div class="col-sm">
+                    <img src="../imagenes/jaime.jpg" alt="jaime">
+                </div>        
+            </div>
             
             
             

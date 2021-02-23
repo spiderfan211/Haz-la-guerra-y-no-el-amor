@@ -20,13 +20,8 @@ body {
 	background: #9274ac00;
    }
 
-.seccion {
- display: block;
- position: absolute;
- top: 9%;
- left: 10%;
- right:10%;
- padding: 16px;
+.container {
+ 
  background: #9274AC;
  color: #333;
  overflow: auto;

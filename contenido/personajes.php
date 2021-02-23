@@ -10,7 +10,7 @@
     
     <body>
 
-        <div id="texto" class="seccion">
+        <div class="container pt-5 pb-5 my-4 ">
 
             <h1> PERSONAJES Y ENEMIGOS </h1>
 
@@ -19,7 +19,7 @@
             <div class="tabla_personajes">
                 <div class="row">
                     
-                    <div>
+                    <div class="col-sm" >
                         <img src="../imagenes/veigar final boss.gif" alt="Ganon">
                         <br>
                         <a href="./personajes/ganon.php">
@@ -28,7 +28,7 @@
                         <p>Ganon, nuestro protagonista</p>
                     </div>
                     
-                    <div>
+                    <div class="col-sm">
                         <img src="../imagenes/monja3.gif" alt="Madre Teresa">
                         <br>
                         <a href="./personajes/madre_teresa.php"> 
@@ -36,7 +36,7 @@
                         </a>
                         <p>Las apariencias engañan</p>
                     </div>
-                    <div>
+                    <div class="col-sm">
                         <img src="../imagenes/paladin.gif" alt="Ornsmough">
                         <br>
                         <a href="./personajes/ornsmough.php">
@@ -51,7 +51,7 @@
                 <br>
                 <br>
                 <div class="row">
-                    <div>
+                    <div class="col-sm">
                         <img src="../imagenes/arlequíin.gif" alt="Payaso terrorífico">
                         <br>
                         <a href="./personajes/pennydumb.php"> 
@@ -59,7 +59,7 @@
                         </a>
                         <p>Ruina y caos</p>
                     </div>
-                    <div>
+                    <div class="col-sm">
                         <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
                         <br>
                         <a href="#"> 
@@ -67,7 +67,7 @@
                         </a>
                         <p>¿Quién será?</p>
                     </div>
-                    <div>
+                    <div class="col-sm">
                         <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
                         <br>
                         <a href="#"> 
