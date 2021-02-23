@@ -19,9 +19,7 @@ body {
 
 .container {
 	
-	
-	
-	
+		
  background: #9274AC;
  color: #333;
  overflow: auto;
@@ -29,11 +27,6 @@ body {
  bottom: 5%;
 }
 
-.titulo
-{
-	background-color: rgb(207, 24, 24);
-	position:fixed;
-}
 
 
   /* Scroll 4 */
@@ -51,6 +44,10 @@ body {
 	background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
 	border-radius: 10px;
   }
+
+
+
+
   
   html,body {
 	
@@ -72,7 +69,6 @@ body {
   
   
   .gallery{
-
 	position:relative;
 	height:100%;
 	width:100%;

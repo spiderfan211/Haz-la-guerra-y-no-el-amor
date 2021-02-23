@@ -15,10 +15,10 @@
                 Trabajo en SCRUM de estudiantes de primer año de DAM en el CES Lope de Vega, en Córdoba
             </h2>
 
-            <br><br>
+            <br>
 
             <h2>Integrantes del equipo</h2>
-            <br><br><br><br>
+            <br><br>
             <div class="row">
                 
                     <div class="col-sm">
