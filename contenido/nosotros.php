@@ -61,7 +61,7 @@
                         <img src="../imagenes/josemanuel.jpg" alt="josemanuel">
                     </td>
                     <td>
-                        <img src="../imagenes/fondo.png" alt="jaime">
+                        <img src="../imagenes/jaime.jpg" alt="jaime">
                     </td>
                 </tr>
             </table>
