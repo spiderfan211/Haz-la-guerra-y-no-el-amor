@@ -6,9 +6,7 @@
     <?php include("html/menu.php")?>
 	</head>
   <body>
-  <div class="row align-items-center justify-content-center">
-    <div class="col">This will be centered vertically and horizontally</div>
-</div>
+  
 
             <div class = "gallery mt-5 ml-5">
                     <div class="clipped-border">

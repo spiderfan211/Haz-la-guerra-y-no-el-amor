@@ -7,9 +7,11 @@
         <link rel="stylesheet" href="../estilos/estilos.css">
         
     </head>
+    <div class="pt-3 pb-4 my-4 ">
+    </div>
     
     <body>
-        <div class="container">
+        <div class="container text-center">
 
             <h2>
                 Trabajo en SCRUM de estudiantes de primer año de DAM en el CES Lope de Vega, en Córdoba

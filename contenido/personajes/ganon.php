@@ -10,7 +10,8 @@
    
     
     <body>
- 
+    <div class="pt-3 pb-4 my-4 ">
+    </div>
         <div class="container pt-5 pb-5 my-4 ">
 
             <h1 class="nombrepersonaje">

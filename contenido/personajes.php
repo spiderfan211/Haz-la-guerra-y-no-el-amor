@@ -9,8 +9,9 @@
     </head>
     
     <body>
-
-        <div class="container overflow-auto pt-5 mb-5 my-4">
+    <div class="pt-3 pb-4 my-4 ">
+    </div>
+        <div class="container pt-5 mb-5 my-4">
             
 
             <h1> PERSONAJES Y ENEMIGOS </h1>

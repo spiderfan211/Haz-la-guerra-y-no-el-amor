@@ -7,8 +7,9 @@
         
     </head>
     <body>
-
-        <div class="container pt-5 pb-5 my-4 ">
+    <div class="pt-3 pb-4 my-4 ">
+    </div>
+        <div class="container pt-5 pb-5 my-4 text-justify">
 
             <h2>LA HISTORIA HASTA AHORA</h2>
             <p><i>Aun físicamente capaz y poderoso</i>, el protagonista de nuestra historia, <b>Ganon</b> siempre prefirió conquistar con la mente. Astuto y manipulador,
