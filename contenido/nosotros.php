@@ -9,7 +9,7 @@
     </head>
     
     <body>
-        <div class="container pt-5 pb-5 my-4 ">
+        <div class="container">
 
             <h2>
                 Trabajo en SCRUM de estudiantes de primer año de DAM en el CES Lope de Vega, en Córdoba
