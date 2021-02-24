@@ -80,3 +80,7 @@ h1
     width: 20%;
     float: left;
 }
+
+.col-sm a img{
+    width: 100%;
+}

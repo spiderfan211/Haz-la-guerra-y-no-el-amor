@@ -48,27 +48,39 @@
             <div class="row">
             <div class="row">
                 <div class=" col-sm">
-                    <img class="img-rounded" src="../imagenes/Git.png" alt="emilio">
+                    <a target="blank" href="https://github.com/spiderfan211">
+                        <img class="img-rounded" src="../imagenes/Git.png" alt="emilio">
+                    </a>
                     </div>
                 <div class=" col-sm">
-                    <img class="img-rounded" src="../imagenes/trello.png" alt="josemanuel">
+                    <a target="blank" href="https://trello.com/b/rskfqEYs/haz-la-guerra-y-no-el-amor" alt="Haz la Guerra y no el Amor Trello">
+                        <img class="img-rounded" src="../imagenes/trello.png" alt="emilio">
+                    </a>
                 </div>
                 </div>
                 <div class="row">
                 <div class=" col-sm">
-                    <img class="img-rounded" src="../imagenes/Git.png" alt="emilio">
+                    <a target="blank" href="https://github.com/LysergMoonlighting">
+                        <img class="img-rounded" src="../imagenes/Git.png" alt="josemanuel">
+                    </a>
                     </div>
                 <div class=" col-sm">
-                    <img class="img-rounded" src="../imagenes/trello.png" alt="josemanuel">
-                </div>
+                    <a target="blank" href="https://trello.com/b/rskfqEYs/haz-la-guerra-y-no-el-amor" alt="Haz la Guerra y no el Amor Trello">
+                        <img class="img-rounded" src="../imagenes/trello.png" alt="josemanuel">
+                    </a>
+                    </div>
                 </div>
                 <div class="row">
                 <div class=" col-sm">
-                    <img class="img-rounded" src="../imagenes/Git.png" alt="emilio">
-                    </div>
-                <div class=" col-sm">
-                    <img class="img-rounded" src="../imagenes/trello.png" alt="josemanuel">
+                    <a target="blank" href="https://github.com/DryCM">
+                        <img class="img-rounded" src="../imagenes/Git.png" alt="jaime">       
+                    </a>
                 </div>
+                <div class=" col-sm">
+                    <a target="blank" href="https://trello.com/b/rskfqEYs/haz-la-guerra-y-no-el-amor" alt="Haz la Guerra y no el Amor Trello">
+                        <img class="img-rounded" src="../imagenes/trello.png" alt="jaime">
+                    </a>
+                    </div>
                 </div>
                     
             </div>
