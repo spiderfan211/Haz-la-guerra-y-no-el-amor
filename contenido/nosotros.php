@@ -45,6 +45,33 @@
                     <img src="../imagenes/jaime.jpg" alt="jaime">
                 </div>        
             </div>
+            <div class="row">
+            <div class="row">
+                <div class=" col-sm">
+                    <img class="img-rounded" src="../imagenes/Git.png" alt="emilio">
+                    </div>
+                <div class=" col-sm">
+                    <img class="img-rounded" src="../imagenes/trello.png" alt="josemanuel">
+                </div>
+                </div>
+                <div class="row">
+                <div class=" col-sm">
+                    <img class="img-rounded" src="../imagenes/Git.png" alt="emilio">
+                    </div>
+                <div class=" col-sm">
+                    <img class="img-rounded" src="../imagenes/trello.png" alt="josemanuel">
+                </div>
+                </div>
+                <div class="row">
+                <div class=" col-sm">
+                    <img class="img-rounded" src="../imagenes/Git.png" alt="emilio">
+                    </div>
+                <div class=" col-sm">
+                    <img class="img-rounded" src="../imagenes/trello.png" alt="josemanuel">
+                </div>
+                </div>
+                    
+            </div>
             
             
             
