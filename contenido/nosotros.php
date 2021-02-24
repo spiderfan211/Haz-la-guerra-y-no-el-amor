@@ -22,13 +22,13 @@
             <div class="row">
                 
                     <div class="col-sm">
-                        Emilio Calvo de Mora Mármol
+                       <h4 class="cursive"> Emilio Calvo de Mora Mármol
                     </div>
                     <div class="col-sm">
-                        Jose Manuel Almagro Domínguez
+                        <h3> Jose Manuel Almagro Domínguez
                     </div>
                     <div class="col-sm">
-                        Jaime Carmona Martínez
+                         <h3> Jaime Carmona Martínez
                     </div>
             </div>
             <div class="row">

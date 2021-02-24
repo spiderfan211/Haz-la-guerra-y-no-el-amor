@@ -10,7 +10,7 @@
     
     <body>
 
-        <div class="container overflow-auto pt-5 mb-5 my-4 scrollable">
+        <div class="container overflow-auto pt-5 mb-5 my-4">
             
 
             <h1> PERSONAJES Y ENEMIGOS </h1>

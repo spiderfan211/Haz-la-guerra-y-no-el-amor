@@ -5,7 +5,7 @@ h1
   color: rgb(53, 54, 56);
   padding:16px;
   font-weight:lighter;
-  text-align:center;
+ 
   display:block;
   margin:16px;
 }
@@ -62,7 +62,7 @@ i{
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted rgb(87, 21, 126);
-    text-align:center;
+    
     
 }
 .parrafocentrado{
