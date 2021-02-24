@@ -9,24 +9,17 @@ body {
 }
 
 .inicio {
-	display: block;
-	position: absolute;
-	height: auto;
 	
-	top: 25%;
-	left: 30%;
-	right:30%;
-	bottom:5%;
+	position: fixed;
+	height: 550px;
+	width: 550px;
+	
 	background: #9274ac00;
    }
 
-.seccion {
- display: block;
- position: absolute;
- top: 9%;
- left: 10%;
- right:10%;
- padding: 16px;
+.container {
+	
+		
  background: #9274AC;
  color: #333;
  overflow: auto;
@@ -34,11 +27,6 @@ body {
  bottom: 5%;
 }
 
-.titulo
-{
-	background-color: rgb(207, 24, 24);
-	position:fixed;
-}
 
 
   /* Scroll 4 */
@@ -56,8 +44,18 @@ body {
 	background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
 	border-radius: 10px;
   }
-  
 
+
+
+
+  
+  html,body {
+	
+	height:100%;
+	width:100%;
+	position:relative;
+	
+  }
 
 
   :root{

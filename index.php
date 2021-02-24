@@ -6,13 +6,11 @@
     <?php include("html/menu.php")?>
 	</head>
   <body>
-    
-  
-    <div  class="inicio">
-    
+  <div class="row align-items-center justify-content-center">
+    <div class="col">This will be centered vertically and horizontally</div>
+</div>
 
-
-            <div class = "gallery">
+            <div class = "gallery mt-5 ml-5">
                     <div class="clipped-border">
                         <a href="./contenido/personajes.php"><img src="./imagenes/malo maloso.gif" id="clipped"></a>
                     </div>
@@ -34,10 +32,11 @@
                     </div>
 
                 
-            </div>
+                    </div>
+                    </div>
  
 
-    </div> 
+    
  
   
   </body>

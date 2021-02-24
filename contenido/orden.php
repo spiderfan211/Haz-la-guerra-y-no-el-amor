@@ -9,7 +9,7 @@
     </head>
     
     <body>
-        <div id="texto" class="seccion">
+        <div class="container pt-5 pb-5 my-4 ">
             <h2>LA ORDEN</h2>
             <p class="parrafocentrado"><br>
                 Alentados por la posibilidad de obtener la Gema de las manos de un Rey ausente ya de voluntad,

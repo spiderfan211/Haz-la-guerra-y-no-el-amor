@@ -9,7 +9,7 @@
     </head>
     
     <body>
-        <div id="texto" class="seccion">
+        <div class="container pt-5 pb-5 my-4 ">
             <h2>LA ALIANZA</h2>
             <p class="parrafocentrado"><br>
                 Con el bien del pueblo en mente, 
