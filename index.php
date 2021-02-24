@@ -8,7 +8,7 @@
   <body>
   
 
-            <div class = "gallery mt-5 ml-5">
+            <div class = "gallery">
                     <div class="clipped-border">
                         <a href="./contenido/personajes.php"><img src="./imagenes/malo maloso.gif" id="clipped"></a>
                     </div>
@@ -31,7 +31,7 @@
 
                 
                     </div>
-                    </div>
+            </div>
  
 
     
