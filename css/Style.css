@@ -20,6 +20,10 @@ body {
  padding-top: 9%;
 }
 
+.container p{
+	text-indent: 50px;
+}
+
 
 
   /* Scroll 4 */

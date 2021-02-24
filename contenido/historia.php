@@ -11,10 +11,10 @@
     </div>
         <div class="container pt-5 pb-5 my-4 text-justify">
 
-            <h2>LA HISTORIA HASTA AHORA</h2>
-            <p><i>Aun físicamente capaz y poderoso</i>, el protagonista de nuestra historia, <b>Ganon</b> siempre prefirió conquistar con la mente. Astuto y manipulador,
+            <h2 class="nombrepersonaje">LA HISTORIA HASTA AHORA</h2>
+            <p class="parrafocentrado"><i>Aun físicamente capaz y poderoso</i>, el protagonista de nuestra historia, <b>Ganon</b> siempre prefirió conquistar con la mente. Astuto y manipulador,
                  fue capaz de doblegar la voluntad de sus oponentes en su país natal y transformarlos en sus más leales siervos.
-            <br><br>
+                <br><br>
                 En busca de la oportunidad de seguir apoderándose de mentes y tierras por igual,
                 se embarca en una aventura que le llevará al <i>Reino de la gema</i>, 
                 damnificado por la guerra entre dos bandos detrás de un mismo objetivo: adueñarse de la Gema del Rey.

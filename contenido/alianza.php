@@ -12,7 +12,7 @@
     <div class="pt-3 pb-4 my-4 ">
     </div>
         <div class="container pt-5 pb-5 my-4 ">
-            <h2>LA ALIANZA</h2>
+            <h2 class="nombrepersonaje">LA ALIANZA</h2>
             <p class="parrafocentrado"><br>
                 Con el bien del pueblo en mente, 
                 la Alianza solo quiere conseguir 
