@@ -18,7 +18,7 @@
             
             <p class="parrafopersonaje">
                 <img class="imagenparrafo" src="../../imagenes/siliciana.gif" alt="Siliciana">
-                Una antigua general de la defensa del reino antes de la corrupcion, enamorada de su rey, valerosa y
+                Una antigua general de la defensa del reino antes que la corrupción lo consumiera, enamorada de su rey, valerosa y
                  orgullosa recibia constantemente la adulacion de rey. Hasta que un día, 
                  para sorpresa de todos, el rey encontro al amor de su vida, y Siliciana por despecho
                  quemó el árbol central de la ciudad.
@@ -26,6 +26,8 @@
                 Su condena fue la muerte,a manos del mismisimo rey ya que ella se llevo la vida de toda
                  la gente que vivia cerca. Estaba tan amargada, que ahora vive como un alma en pena, amargando 
                  la existencia de todos los enamorados que encuentra a su paso. 
+                 <br>
+                 Su combate se basará en estar gritando todo el rato, mientras controla a los enamorados que consiguio llevar a su mismod estino
             </p> 
             
             
