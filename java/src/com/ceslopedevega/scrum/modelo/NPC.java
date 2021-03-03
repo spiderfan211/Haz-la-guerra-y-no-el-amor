@@ -24,8 +24,8 @@ public class NPC extends Character implements Serializable{
 		this.loyalty = loyalty;
 	}
 	
-	public NPC ( String name, int AD, int HP, int charisma, int money, String faction, Room room, int loyalty) {
-		super( name, AD, HP, charisma, money, faction, room );
+	public NPC ( String name, int AD, int HP, int defense, int charisma, int money, String faction, Room room, int loyalty) {
+		super( name, AD, HP, defense, charisma, money, faction, room );
 		this.loyalty = loyalty;
 	}
 	

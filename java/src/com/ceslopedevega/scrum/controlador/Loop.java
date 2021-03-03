@@ -7,12 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import com.ceslopedevega.scrum.modelo.Direction;
 import com.ceslopedevega.scrum.modelo.Player;
@@ -127,8 +122,21 @@ public class Loop {
         	switch( input ) {
         	case 1:
         		player.describeRoom();
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
         		break;
         	case 2:
+        		player.showStats();
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
+        		break;
+        	case 3:
         		System.out.println("Introduzca North, West, South o East para avanzar\n");
         		String dir = scan.nextLine();
         		if( dir.equalsIgnoreCase(Direction.SOUTH.name())|| dir.equalsIgnoreCase(Direction.NORTH.name()) || dir.equalsIgnoreCase(Direction.WEST.name()) || dir.equalsIgnoreCase(Direction.EAST.name())) {
@@ -143,42 +151,55 @@ public class Loop {
         		else {
         			System.out.println("ERROR. Introduzca una dirección válida");
         		}
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
         		break;
-        	case 3:
+        	case 4:
         		/*Coger objetos*/
         		break;
         	case 5:
-        		saveGame();
+        		int continuebattle;
+        		System.out.println("\nComienza la batalla");
+        		do{
+        			continuebattle = player.attack();
+        			System.out.println(player.battleStatus());
+        		}while(continuebattle!=0);
+        		
+        		if(continuebattle == 1) {
+        			player.enemyDeath();
+        			System.out.println("\n¡Enhorabuena! Has ganado la pelea.");
+        		}
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
         		break;
         	case 6:
+        		saveGame();
+        		break;
+        	case 10:
         		System.out.println("Terminando el juego");
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
         		break;
         	default:
         		System.out.println("Introduzca un input válido");
         		break;
         	}
-        }while( input != 6 );
+        }while( input != 10 );
         
         System.out.println("\n\tThe end \n\tGRACIAS POR JUGAR");
         
         
 	}
 
-	/*
-	private static void listofRecentFile() {
-
-        try (Stream<Path> walk = Files.walk(Paths.get("./saves"))) {
-
-            List<Path> result = walk.filter(f -> f.toString().endsWith(".dat")).collect(Collectors.toList());
-
-            result.forEach(System.out::println);
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-	*/
 	
 	public static void saveGame()
 	{

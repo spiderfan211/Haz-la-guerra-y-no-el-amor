@@ -37,10 +37,10 @@ public abstract class Character implements Serializable{
 		
 	}
 
-	public Character( String name, int AD, int HP, int charisma, int money, String faction, Room room) {
+	public Character( String name, int AD, int HP, int defense, int charisma, int money, String faction, Room room) {
 		
 		this.name = name;
-		this.stats = new Stats( AD, HP, charisma, money, faction );
+		this.stats = new Stats( AD, HP, defense, charisma, money, faction );
 		this.room = room;
 		this.items = new ArrayList<Item>();
 	}
@@ -84,5 +84,16 @@ public abstract class Character implements Serializable{
 		this.room.describeRoom();
 	}	
 	
+	public boolean isDead() {
+		return (this.stats.getHP()<=0);
+	}
+	
+	public void addMoney(int money) {
+		this.getStats().addMoney(money);
+	}
+	
+	public void showStats() {
+		this.stats.showStats();
+	}
 	
 }
