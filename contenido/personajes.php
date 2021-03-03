@@ -68,6 +68,40 @@
                         </a>
                         <p>Dicha sin límites</p>
                     </div>
+                    
+                    <div class="col-sm">
+                        <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
+                        <br>
+                        <a href="#"> 
+                            <h2 class="h2personaje">Personaje por crear</h2>
+                        </a>
+                        <p>¿Quién será?</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="../imagenes/siliciana.gif" alt="Siliciana">
+                        <br>
+                        <a href="./personajes/siliciana.php"> 
+                            <h2 class="h2personaje">Siliciana</h2>
+                        </a>
+                        <p>Tristeza y desesperacion</p>
+                    </div>
+                    <div class="col-sm">
+                        <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
+                        <br>
+                        <a href="#"> 
+                            <h2 class="h2personaje">Personaje por crear</h2>
+                        </a>
+                        <p>¿Quién será?</p>
+                    </div>
+                    
                     <div class="col-sm">
                         <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
                         <br>
