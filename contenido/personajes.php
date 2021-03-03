@@ -70,12 +70,12 @@
                     </div>
                     
                     <div class="col-sm">
-                        <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
+                        <img src="../imagenes/hierba1.png" alt="Hierba irritante">
                         <br>
                         <a href="#"> 
-                            <h2 class="h2personaje">Personaje por crear</h2>
+                            <h2 class="h2personaje">Hierba irritante</h2>
                         </a>
-                        <p>¿Quién será?</p>
+                        <p>Irrita hasta las plantas</p>
                     </div>
                 </div>
                 <br>
@@ -103,12 +103,12 @@
                     </div>
                     
                     <div class="col-sm">
-                        <img src="../imagenes/hierba1.png" alt="Hierba irritante">
+                        <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
                         <br>
                         <a href="#"> 
-                            <h2 class="h2personaje">Hierba irritante</h2>
+                            <h2 class="h2personaje">Personaje por crear</h2>
                         </a>
-                        <p>Irrita hasta las plantas</p>
+                        <p>¿Quién será?</p>
                     </div>
                 </div>
     
