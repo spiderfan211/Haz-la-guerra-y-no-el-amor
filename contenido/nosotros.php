@@ -12,7 +12,7 @@
     <body>
         <div class="container text-center">
 
-            <h2>
+            <h2 class="h2personaje">
                 Trabajo en SCRUM de estudiantes de primer año de DAM en el CES Lope de Vega, en Córdoba
             </h2>
 
