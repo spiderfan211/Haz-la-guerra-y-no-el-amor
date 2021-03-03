@@ -19,15 +19,12 @@
             
             <p class="parrafopersonaje">
                 <img class="imagenparrafo" src="../../imagenes/Hierba1.png" alt="Hierba Irritante">
-                Hierba Irritante, tambien llamada en su otra vida Taroth, era una niña cualquiera que buscaba molestar
-                a todas las personas del reino para divertirse, la pobre y estupida niña sobre paso por alto las normas en contra de acentrarse en el bosque primigenio
-                situado a las afueras, en el bosque habia una magia incomprendida, que manipulaba la genetica de cada ser vivo que entraba en él
-                Lentamente la niña empezo a convertirse en un ser mutado entre una hierba y una persona,
-                con los poderes que obtuvo mediante la mutacion pudo sobrevivir en el bosque sola. <br>
-                Lle va a cabo la mision de molestar a todas las personas de la ciudad, mediante ataques y destrozos de la propia ciudad.
-                <br>Ganon encontrara a la Hierba Irritante en medio de la ciudad sembrando el caos por su propia diversion, este luchara contra
-                ella para seguir continuando su propia destruccion y para que no sea un estorbo
-    
+                Hierba Irritante, llamada en su anterior vida Taroth, era una niña que disfrutaba importunando
+                a cualquiera que se le pusiera delante. En una de sus aventuras por el Reino, Taroth se adentró en el bosque ancestral, cuya 
+                entrada estaba prohibida a cualquier súbdito del Rey. La antigua magia del bosque transformó a Taroth, creando una amalgama 
+                de naturaleza y humanidad: una <b>mujer planta</b>.
+                Gracias a las habilidades que obtuvo tras la mutación, consiguió sobrevivir en el bosque sola, donde permaneció hasta los días de Ganon. <br>
+                <br>Ganon se encontrará a Hierba Irritante en su bosque natal, donde podrá decidir si luchar o aliarse con ella.
             </p>
         
         

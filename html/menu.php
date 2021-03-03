@@ -24,6 +24,8 @@
           <a class="dropdown-item" href="../../../contenido/personajes/ornsmough.php">Ornsmough</a>
           <a class="dropdown-item" href="../../../contenido/personajes/pennydumb.php">Pennydumb</a>
           <a class="dropdown-item" href="../../../contenido/personajes/recolector.php">El recolector</a>
+          <a class="dropdown-item" href="../../../contenido/personajes/hierba_irritante.php">Hierba Irritante</a></a>
+          <a class="dropdown-item" href="../../../contenido/personajes/siliciana.php">Siliciana</a>
           </div>
       </li>
 
