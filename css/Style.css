@@ -25,6 +25,119 @@ body {
 }
 
 
+h1
+{
+  font-size: 32px;
+  font-family:Arial, Helvetica, sans-serif;
+  color: rgb(53, 54, 56);
+  padding:16px;
+  font-weight:lighter;
+  display:block;
+  margin:16px; 
+}
+
+.nombrepersonaje{
+    font-size: 300%;
+    font-family:Helvetica;
+    padding: 10%;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+.tabla_personajes{
+    margin: auto;
+    width:100%;
+}
+
+.row{
+    margin: auto;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.row > div {
+    width:20%;
+    padding: 5px;
+    border-right-style: groove;
+    border-left-style: groove;
+
+    border-color: rgb(64, 64, 93);
+    border-width: 1px;
+
+}
+
+.row > div > img {
+    width: 100%;
+}
+
+
+.integrantes{
+    vertical-align: middle;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding-top: 10%;
+    text-align: center;
+}
+
+.integrantes th{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+
+
+.parrafopersonaje{
+    padding-right: 20%;
+    padding-left: 20%;
+    text-align: justify;
+    font-family:Helvetica;
+    font-weight: 400;
+    font-size: larger;
+}
+
+.imagenparrafo{
+    padding:10px;
+    width: 20%;
+    float: left;
+}
+
+.col-sm a img{
+    width: 100%;
+}
+
+.h2personaje{
+    text-align: center;
+}
+
+i{
+    color: rgb(87, 21, 126);
+}
+  
+.parrafocentrado{
+    font-family: 'Lobster';
+    font-size: larger;
+    padding-right: 20%;
+    padding-left: 20%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
   /* Scroll 4 */
 ::-webkit-scrollbar {

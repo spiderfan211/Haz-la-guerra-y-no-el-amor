@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <?php include("../html/meta.php")?>
     <?php include("../html/menu.php")?>
-    <link rel="stylesheet" href="../estilos/estilos.css">
         
     </head>
     
@@ -14,7 +13,7 @@
         <div class="container pt-5 mb-5 my-4">
             
 
-            <h1> PERSONAJES Y ENEMIGOS </h1>
+            <h1 class="h2personaje"> PERSONAJES Y ENEMIGOS </h1>
 
             <p> Los habitantes del Reino de la Gema son muy variopintos. En su camino al poder, Ganon se encontrará con muchos de ellos. He aquí algunos:</p>
         
