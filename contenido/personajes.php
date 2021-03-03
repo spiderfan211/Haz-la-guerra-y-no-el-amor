@@ -102,20 +102,29 @@
                         <a href="./personajes/pennydumb.php"> 
                             <h2 class="h2personaje">Pennydumb</h2>
                         </a>
-                        <p>Ruina y caos</p>
                     </div>
                     <div class="col-sm">
                         
                         <a href="./personajes/recolector.php"> 
                             <h2 class="h2personaje">El Recolector</h2>
                         </a>
-                        <p>Dicha sin límites</p>
                     </div>
                     
                     <div class="col-sm">
                         <a href="./personajes/hierba_irritante.php"> 
                             <h2 class="h2personaje">Hierba irritante</h2>
                         </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Ruina y caos</p>
+                    </div>
+                    <div class="col-sm">
+                        <p>Dicha sin límites</p>
+                    </div>
+                    
+                    <div class="col-sm">
                         <p>Irrita hasta las plantas</p>
                     </div>
                 </div>

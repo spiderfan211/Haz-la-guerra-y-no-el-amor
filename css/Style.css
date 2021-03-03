@@ -26,7 +26,16 @@ body {
   color: rgb(148, 45, 148);
 
 }
-
+.rowtrello{
+  margin: auto;
+    width:80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  max-width: 200px;
+  max-height: 200px;
+}
 
 h1
 {
@@ -120,6 +129,8 @@ h1
 }
 
 .col-sm a img{
+    max-width: 100px;
+    max-height: 100px;
     width: 100%;
 }
 
