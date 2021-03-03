@@ -113,8 +113,7 @@
                     </div>
                     
                     <div class="col-sm">
-                        
-                        <a href="#"> 
+                        <a href="./personajes/hierba_irritante.php"> 
                             <h2 class="h2personaje">Hierba irritante</h2>
                         </a>
                         <p>Irrita hasta las plantas</p>
