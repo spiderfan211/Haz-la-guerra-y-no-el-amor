@@ -23,26 +23,57 @@
                     <div class="col-sm" >
                         <img class="col-sm" src="../imagenes/veigar final boss.gif" alt="Ganon">
                         <br>
-                        <a class="col-sm"href="./personajes/ganon.php">
-                            <h2 class="h2personaje">Ganon</h2>
-                        </a>
-                        <p>Ganon, nuestro protagonista</p>
+                       
                     </div>
                     
                     <div class="col-sm">
                         <img src="../imagenes/monja3.gif" alt="Madre Teresa">
                         <br>
-                        <a href="./personajes/madre_teresa.php"> 
-                            <h2 class="h2personaje">Madre Teresa</h2>
-                        </a>
-                        <p>Las apariencias engañan</p>
+                        
                     </div>
                     <div class="col-sm">
                         <img src="../imagenes/paladin.gif" alt="Ornsmough">
                         <br>
-                        <a href="./personajes/ornsmough.php">
-                            <h2 class="h2personaje">Ornsmough</h2>
+                        
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-sm">
+                        
+                        <br>
+                        <a href="./personajes/ganon.php"> 
+                            <h2 class="h2personaje enlacemorado">Ganon</h2>
                         </a>
+                    </div>
+                    
+                    <div class="col-sm">
+                        
+                        <br>
+                        <a href="./personajes/madre_teresa.php"> 
+                            <h2 class="h2personaje enlacemorado">Madre Teresa</h2>
+                        </a>
+                    </div>
+                    <div class="col-sm">
+                        
+                        <br>
+                        <a href="./personajes/ornsmough.php">
+                            <h2 class="h2personaje enlacemorado">Ornsmough</h2>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="row">
+                    
+                    <div class="col-sm" >
+                        <p>Ganon, nuestro protagonista</p>
+                    </div>
+                    
+                    <div class="col-sm">
+                        <p>Las apariencias engañan</p>
+                    </div>
+                    <div class="col-sm">
                         <p>Vanidad y poder</p>
                     </div>
                 </div>
@@ -55,24 +86,87 @@
                     <div class="col-sm">
                         <img src="../imagenes/arlequíin.gif" alt="Payaso terrorífico">
                         <br>
-                        <a href="./personajes/pennydumb.php"> 
-                            <h2 class="h2personaje">Pennydumb</h2>
-                        </a>
-                        <p>Ruina y caos</p>
                     </div>
                     <div class="col-sm">
                         <img src="../imagenes/recolector.png" alt="El recolector">
                         <br>
-                        <a href="./personajes/recolector.php"> 
-                            <h2 class="h2personaje">El Recolector</h2>
+                    </div>
+                    
+                    <div class="col-sm">
+                        <img src="../imagenes/hierba1.png" alt="Hierba irritante">
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        
+                        <a href="./personajes/pennydumb.php"> 
+                            <h2 class="h2personaje enlacemorado">Pennydumb</h2>
                         </a>
+                    </div>
+                    <div class="col-sm">
+                        
+                        <a href="./personajes/recolector.php"> 
+                            <h2 class="h2personaje enlacemorado">El Recolector</h2>
+                        </a>
+                    </div>
+                    
+                    <div class="col-sm">
+                        <a href="./personajes/hierba_irritante.php"> 
+                            <h2 class="h2personaje enlacemorado">Hierba irritante</h2>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <p>Ruina y caos</p>
+                    </div>
+                    <div class="col-sm">
                         <p>Dicha sin límites</p>
+                    </div>
+                    
+                    <div class="col-sm">
+                        <p>Irrita hasta las plantas</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+                <div class="row">
+                    <div class="col-sm">
+                        <img src="../imagenes/siliciana.gif" alt="Siliciana">
+                        
                     </div>
                     <div class="col-sm">
                         <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
                         <br>
+                    </div>
+                    
+                    <div class="col-sm">
+                        <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
+                        <br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                            <a href="./personajes/siliciana.php"> 
+                            <h2 class="h2personaje enlacemorado">Siliciana</h2>
+                        </a>
+                        <p>Tristeza y desesperacion</p>
+                    </div>
+                    <div class="col-sm">
                         <a href="#"> 
-                            <h2 class="h2personaje">Personaje por crear</h2>
+                            <h2 class="h2personaje enlacemorado">Personaje por crear</h2>
+                        </a>
+                        <p>¿Quién será?</p>
+                    </div>
+                    
+                    <div class="col-sm">
+                        <a href="#"> 
+                            <h2 class="h2personaje enlacemorado">Personaje por crear</h2>
                         </a>
                         <p>¿Quién será?</p>
                     </div>
