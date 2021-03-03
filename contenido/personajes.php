@@ -72,7 +72,7 @@
                     <div class="col-sm">
                         <img src="../imagenes/hierba1.png" alt="Hierba irritante">
                         <br>
-                        <a href="#"> 
+                        <a href="./personajes/hierba_irritante.php"> 
                             <h2 class="h2personaje">Hierba irritante</h2>
                         </a>
                         <p>Irrita hasta las plantas</p>

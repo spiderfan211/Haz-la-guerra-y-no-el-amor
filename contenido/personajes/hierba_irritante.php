@@ -21,13 +21,12 @@
                 <img class="imagenparrafo" src="../../imagenes/Hierba1.png" alt="Hierba Irritante">
                 Hierba Irritante, tambien llamada en su otra vida Taroth, era una niña cualquiera que buscaba molestar
                 a todas las personas del reino para divertirse, la pobre y estupida niña sobre paso por alto las normas en contra de acentrarse en el bosque primigenio
-                situado a las afueras, en el bosque habia una magia incomprendida que hacia  . <br>
-                Portando solo una capa roída y una cantimplora, se lanzó 
-                a lo desconocido, en busca de pueblos enteros a los que subyugar.
-                <br>Es por esta peregrinación que Ganon encuentra, en el momento 
-                álgido de su historia, en plena guerra civil, el Reino de la Gema. 
-                ¿Podrá alzarse con la victoria y empuñar el poder solo? O necesitará 
-                aliarse con algún bando en su camino a la dominación total?
+                situado a las afueras, en el bosque habia una magia incomprendida, que manipulaba la genetica de cada ser vivo que entraba en él
+                Lentamente la niña empezo a convertirse en un ser mutado entre una hierba y una persona,
+                con los poderes que obtuvo mediante la mutacion pudo sobrevivir en el bosque sola. <br>
+                Lle va a cabo la mision de molestar a todas las personas de la ciudad, mediante ataques y destrozos de la propia ciudad.
+                <br>Ganon encontrara a la Hierba Irritante en medio de la ciudad sembrando el caos por su propia diversion, este luchara contra
+                ella para seguir continuando su propia destruccion y para que no sea un estorbo
     
             </p>
         
