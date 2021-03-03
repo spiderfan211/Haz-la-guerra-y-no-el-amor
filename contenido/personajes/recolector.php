@@ -18,7 +18,7 @@
             </h1>
             
             <p class="parrafopersonaje">
-                <img class="imagenparrafo" src="../../imagenes/malo maloso.gif" alt="Ganon">
+                <img class="imagenparrafo" src="../../imagenes/recolector.png" alt="El recolector">
                 Tras largo gobernando sus territorios, Ganon decidió 
                 lanzarse de nuevo a la aventura de conquista, con 
                 un factor de desafío añadido: lo haría solo. <br>

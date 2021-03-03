@@ -23,6 +23,7 @@
           <a class="dropdown-item" href="../../../contenido/personajes/madre_teresa.php">Madre Teresa</a>
           <a class="dropdown-item" href="../../../contenido/personajes/ornsmough.php">Ornsmough</a>
           <a class="dropdown-item" href="../../../contenido/personajes/pennydumb.php">Pennydumb</a>
+          <a class="dropdown-item" href="../../../contenido/personajes/recolector.php">El recolector</a>
           </div>
       </li>
 
