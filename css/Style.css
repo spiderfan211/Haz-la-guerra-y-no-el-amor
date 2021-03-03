@@ -22,13 +22,19 @@ body {
  bottom: 5%;
  padding-top: 2%;
 }
+
 .container p{
   margin: 5%  ;
 }
-.container a{
-  color: rgb(148, 45, 148);
 
+.container .enlacemorado{
+  color: rgb(148, 45, 148);
 }
+
+.container a:hover{
+	color: rgb(148, 45, 148);
+}
+
 .rowtrello{
   margin: auto;
     width:80%;
