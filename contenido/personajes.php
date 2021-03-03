@@ -25,7 +25,7 @@
                         <img class="col-sm" src="../imagenes/veigar final boss.gif" alt="Ganon">
                         <br>
                         <a class="col-sm"href="./personajes/ganon.php">
-                            <h2>Ganon (imagen temporal)</h2>
+                            <h2 class="h2personaje">Ganon</h2>
                         </a>
                         <p>Ganon, nuestro protagonista</p>
                     </div>
@@ -34,7 +34,7 @@
                         <img src="../imagenes/monja3.gif" alt="Madre Teresa">
                         <br>
                         <a href="./personajes/madre_teresa.php"> 
-                            <h2>Madre Teresa</h2>
+                            <h2 class="h2personaje">Madre Teresa</h2>
                         </a>
                         <p>Las apariencias engañan</p>
                     </div>
@@ -42,7 +42,7 @@
                         <img src="../imagenes/paladin.gif" alt="Ornsmough">
                         <br>
                         <a href="./personajes/ornsmough.php">
-                            <h2>Ornsmough</h2>
+                            <h2 class="h2personaje">Ornsmough</h2>
                         </a>
                         <p>Vanidad y poder</p>
                     </div>
@@ -57,23 +57,23 @@
                         <img src="../imagenes/arlequíin.gif" alt="Payaso terrorífico">
                         <br>
                         <a href="./personajes/pennydumb.php"> 
-                            <h2>Pennydumb</h2>
+                            <h2 class="h2personaje">Pennydumb</h2>
                         </a>
                         <p>Ruina y caos</p>
                     </div>
                     <div class="col-sm">
-                        <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
+                        <img src="../imagenes/recolector.png" alt="El recolector">
                         <br>
-                        <a href="#"> 
-                            <h2>Personaje por crear</h2>
+                        <a href="./personajes/recolector.php"> 
+                            <h2 class="h2personaje">El Recolector</h2>
                         </a>
-                        <p>¿Quién será?</p>
+                        <p>Dicha sin límites</p>
                     </div>
                     <div class="col-sm">
                         <img src="../imagenes/nuevo personaje.png" alt="Personaje por crear">
                         <br>
                         <a href="#"> 
-                            <h2>Personaje por crear</h2>
+                            <h2 class="h2personaje">Personaje por crear</h2>
                         </a>
                         <p>¿Quién será?</p>
                     </div>
