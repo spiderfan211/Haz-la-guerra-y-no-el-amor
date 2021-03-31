@@ -9,11 +9,13 @@ public class Character {
 	
 	private String name;
 	private Stats stats;
+	private Room room;
 	
 	
 	public Character() {
 		name = DEFAULT_NAME;
 		stats = new Stats();
+		room = new Room();
 	}
 	
 	
