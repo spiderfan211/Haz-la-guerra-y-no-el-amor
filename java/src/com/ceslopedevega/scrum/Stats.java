@@ -2,10 +2,18 @@ package com.ceslopedevega.scrum;
 
 public class Stats {
 	
+	enum Faction{	//no se si definiendola aqui se puede usar fuera de la clase
+		ORDEN,
+		ALIANZA,
+		NONE
+	}
+	
 	private static final int DEFAULT_AD = 1;
 	private static final int DEFAULT_HP = 1;
 	private static final int DEFAULT_CHARISMA = 1;
 	private static final int DEFAULT_MONEY = 1;
+	private static final String DEFAULT_FACTION = "NONE";
+
 
 
 	//AD es el daño del ataque básico del personaje
@@ -17,12 +25,21 @@ public class Stats {
 	private int HP;
 	private int charisma;
 	private int money;
+	private Faction faction;
+	//TODO añadir stats según las necesitemos
 	
 	public Stats() {
-		AD = DEFAULT_AD;
-		HP = DEFAULT_HP;
-		charisma = DEFAULT_CHARISMA;
-		money = DEFAULT_MONEY;
+		
+		this ( DEFAULT_AD, DEFAULT_HP, DEFAULT_CHARISMA, DEFAULT_MONEY, DEFAULT_FACTION );
+		
+	}
+	
+	public Stats ( int AD, int HP, int charisma, int money, String faction ) {
+		this.AD = AD;
+		this.HP = HP;
+		this.charisma = charisma;
+		this.money = money;
+		this.faction = Faction.valueOf(faction);
 	}
 	
 	

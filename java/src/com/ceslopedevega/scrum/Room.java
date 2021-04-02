@@ -15,7 +15,7 @@ public class Room {
 	private int n, s, w, e;
 	
 	public Room () {
-		
+        this( DEFAULT_NAME, DEFAULT_DESCRIPTION, DEFAULT_N, DEFAULT_S, DEFAULT_W, DEFAUL_E);
 	}
 	
 	public Room(String name, String description, int n, int s, int w, int e) {
