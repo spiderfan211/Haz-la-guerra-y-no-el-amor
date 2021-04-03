@@ -2,7 +2,7 @@ package com.ceslopedevega.scrum;
 
 public class Stats {
 	
-	enum Faction{	//no se si definiendola aqui se puede usar fuera de la clase
+	public enum Faction{	//no se si definiendola aqui se puede usar fuera de la clase
 		ORDEN,
 		ALIANZA,
 		NONE
@@ -55,6 +55,14 @@ public class Stats {
 	public void setHP(int HP) {
 		this.HP = HP;
 	}
+	public Faction getFaction() {
+		return faction;
+	}
+
+	public void setFaction(Faction faction) {
+		this.faction = faction;
+	}
+
 	public int getCharisma() {
 		return charisma;
 	}
