@@ -4,10 +4,10 @@ import java.util.ArrayList;
 
 public class Player extends Character{
 
-		//TODO definir características exclusivas de Player respecto a NPC, métodos de subir de nivel y tal
-		//Si no encontramos una razón de ser para esta clase, debería fusionarse con NPC, 
-		//quitarle la abstracción a Character.java, y eliminar la herencia
-	
+	//TODO definir características exclusivas de Player respecto a NPC, métodos de subir de nivel y tal
+	//Si no encontramos una razón de ser para esta clase, debería fusionarse con NPC, 
+	//quitarle la abstracción a Character.java, y eliminar la herencia
+
 	public Player() {
 		super();
 	}
@@ -32,7 +32,7 @@ public class Player extends Character{
 	}
 	
 	// mover un personaje en la direccion dir
-    public int moveInDirection(String str_dir, ArrayList<Room> map) {
+    public int moveInDirection(String dir, ArrayList<Room> map) {
         // return: Constant representing the room number moved to
         // or NOEXIT
         //
@@ -40,18 +40,18 @@ public class Player extends Character{
         // in direction indicated by dir
         Room room = super.getRoom();
         int exit;
-        Direction dir = Direction.valueOf(str_dir);	//no sé si cogerá bien str_dir si está en minúscula la entrada
+        dir = dir.toUpperCase();
         switch (dir) {
-            case NORTH:
+            case "NORTH":
                 exit = room.getN();
                 break;
-            case SOUTH:
+            case "SOUTH":
                 exit = room.getS();
                 break;
-            case EAST:
+            case "EAST":
                 exit = room.getE();
                 break;
-            case WEST:
+            case "WEST":
                 exit = room.getW();
                 break;
             default:

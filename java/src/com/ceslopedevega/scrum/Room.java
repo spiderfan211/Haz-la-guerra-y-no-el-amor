@@ -8,14 +8,6 @@ public class Room {
 	private static final String DEFAULT_DESCRIPTION = "Primera sala del juego";
 	private static final int DEFAULT_N = 1;
 	private static final int DEFAULT_S = 1;
-	public int getIndex() {
-		return index;
-	}
-
-	public void setIndex(int index) {
-		this.index = index;
-	}
-
 	private static final int DEFAULT_W = 1;
 	private static final int DEFAUL_E = 1;
 
@@ -91,4 +83,11 @@ public class Room {
 		this.description = description;
 	}
 	
+	public int getIndex() {
+		return index;
+	}
+
+	public void setIndex(int index) {
+		this.index = index;
+	}
 }

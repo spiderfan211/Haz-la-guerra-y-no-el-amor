@@ -20,6 +20,7 @@ public abstract class Character {
 	private Stats stats;
 	private Room room;
 	private ArrayList<Item> items;
+	//TODO añadir más atributos 
 	
 	
 	
