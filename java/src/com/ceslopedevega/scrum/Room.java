@@ -1,15 +1,17 @@
 package com.ceslopedevega.scrum;
 
+import com.ceslopedevega.scrum.Character.Direction;
+
 public class Room {
 	
 
 	private static final String DEFAULT_NAME = "Sala inicial";
 	private static final int DEFAULT_INDEX = 0;
 	private static final String DEFAULT_DESCRIPTION = "Primera sala del juego";
-	private static final int DEFAULT_N = 1;
-	private static final int DEFAULT_S = 1;
-	private static final int DEFAULT_W = 1;
-	private static final int DEFAUL_E = 1;
+	private static final int DEFAULT_N = Direction.NOEXIT;
+	private static final int DEFAULT_S = Direction.NOEXIT;
+	private static final int DEFAULT_W = Direction.NOEXIT;
+	private static final int DEFAUL_E = Direction.NOEXIT;
 
 	
 	private String name;
@@ -90,4 +92,49 @@ public class Room {
 	public void setIndex(int index) {
 		this.index = index;
 	}
+	
+	public void describeRoom() {
+		System.out.println(this.description);
+		System.out.println(this.describeSalidas());
+		//más descripciones
+		
+	}
+	
+	private String describeSalidas() {
+		boolean alguna_salida = false;
+		String salida_norte = "";
+		String salida_sur = "";
+		String salida_oeste = "";
+		String salida_este = "";
+
+		if( this.n != Direction.NOEXIT ) {
+			alguna_salida = true;
+			salida_norte = "una salida al norte ";
+		}
+		if( this.n != Direction.NOEXIT ) {
+			alguna_salida = true;
+			salida_sur = " una salida al sur ";
+		}
+		if( this.n != Direction.NOEXIT ) {
+			alguna_salida = true;
+			salida_oeste = " una salida al oeste ";
+		}
+		if( this.n != Direction.NOEXIT ) {
+			alguna_salida = true;
+			salida_este = " una salida al este ";
+		}
+		
+		
+		if( alguna_salida == true ) {
+			return "Ves " + salida_norte + salida_sur + salida_oeste + salida_este ;
+			/*Hay que implementar mejor el string para que se vea mejor redactado, con comas y tal*/
+		}
+		else {
+			return "La estancia no tiene salidas";	/*realmente esto no ocurrirá nunca porque siempre tienen al menos una salida, 
+																	pero por si implementáramos en algún momento algo que cierre las salidas 
+																	temporalmente de la sala*/
+		}
+	}
+	
+	
 }
