@@ -1,6 +1,5 @@
 package com.ceslopedevega.scrum;
 
-import com.ceslopedevega.scrum.Character.Direction;
 
 public class Room {
 	

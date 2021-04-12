@@ -6,14 +6,6 @@ public abstract class Character {
 	
 	private static final String DEFAULT_NAME = "Jeff";
 
-	protected enum Direction {	//preferiría encapsular Direction en una clase aparte pero no lo veo claro
-	    NORTH, 
-	    SOUTH, 
-	    EAST, 
-	    WEST;
-		
-	    public static final int NOEXIT = -1;
-	}	
 	
 	
 	private String name;
