@@ -2,11 +2,6 @@ package com.ceslopedevega.scrum;
 
 public class Stats {
 	
-	public enum Faction{	//no se si definiendola aqui se puede usar fuera de la clase
-		ORDEN,
-		ALIANZA,
-		NONE
-	}
 	
 	private static final int DEFAULT_AD = 1;
 	private static final int DEFAULT_HP = 1;
