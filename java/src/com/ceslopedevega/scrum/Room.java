@@ -1,5 +1,6 @@
 package com.ceslopedevega.scrum;
 
+import java.util.ArrayList;
 
 public class Room {
 	
@@ -17,6 +18,7 @@ public class Room {
 	private int index;
 	private String description;
 	private int n, s, w, e;
+	private ArrayList<Item> items;
 	
 	public Room () {
         this( DEFAULT_NAME, DEFAULT_INDEX, DEFAULT_DESCRIPTION, DEFAULT_N, DEFAULT_S, DEFAULT_W, DEFAUL_E);
@@ -30,6 +32,7 @@ public class Room {
         this.s = s;
         this.w = w;
         this.e = e;
+        this.items = new ArrayList<Item>();
     }
 
     // norte
@@ -95,10 +98,19 @@ public class Room {
 	public void describeRoom() {
 		System.out.println(this.description);
 		System.out.println(this.describeSalidas());
+		System.out.println(this.describeItems());
 		//más descripciones
 		
 	}
 	
+	private String describeItems() {
+		String todos = "";
+		for( Item i : items) {
+			todos += i;
+		}
+		return todos	;
+	}
+
 	private String describeSalidas() {
 		boolean alguna_salida = false;
 		String salida_norte = "";
@@ -110,15 +122,15 @@ public class Room {
 			alguna_salida = true;
 			salida_norte = "una salida al norte ";
 		}
-		if( this.n != Direction.NOEXIT ) {
+		if( this.s != Direction.NOEXIT ) {
 			alguna_salida = true;
 			salida_sur = " una salida al sur ";
 		}
-		if( this.n != Direction.NOEXIT ) {
+		if( this.w != Direction.NOEXIT ) {
 			alguna_salida = true;
 			salida_oeste = " una salida al oeste ";
 		}
-		if( this.n != Direction.NOEXIT ) {
+		if( this.e != Direction.NOEXIT ) {
 			alguna_salida = true;
 			salida_este = " una salida al este ";
 		}

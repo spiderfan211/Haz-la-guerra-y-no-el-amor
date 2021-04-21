@@ -46,7 +46,7 @@ public class Loop {
          * 
          */
         
-        String input;
+        int input = -1;
         
         do {
         	/* Idea para el bucle: un switch 
@@ -55,8 +55,13 @@ public class Loop {
         	 * la descripción de la sala, seguido 
         	 * de un mensaje genérico de petición de 
         	 * acción por parte del jugador*/
-        	System.out.println( "\n" + player.getRoom().getDescription());
-        	System.out.println("\nOpcion:");
+        	if(input != 1) {    		
+        		System.out.println( "\n" + player.getRoom().getDescription());
+			}
+        	System.out.println("\n¿Qué quieres hacer?"
+        			+ "\n\t1) Describir la estancia"
+        			+ "\n\t2) Desplazarse en una dirección"
+        			+ "\n\t3) Terminar el juego");
         	/*
         	 * Para la pregunta de ingreso por consola
         	 * se podría preguntar qué se desea hacer,
@@ -71,27 +76,34 @@ public class Loop {
         	 * (si tiene un enemigo, un cofre y x salidas, 
         	 * tendrá más opciones que si solo tiene salidas y ya está)
         	 * */
-        	input = scan.nextLine().toLowerCase();
+        	input = scan.nextInt();
+        	scan.nextLine();
         	switch( input ) {
-        	case "nombre":
-        		System.out.println("El nombre de la sala es " + player.getRoom().getName());
+        	case 1:
+        		player.getRoom().describeRoom();
         		break;
-        	case "mover":
-        		System.out.println("Habitación actual: " + player.getRoom().getIndex());
-        		String dir = scan.nextLine();	//faltarían filtros
-        		
-        		System.out.println("Resultado de moveInDirection: " + player.moveInDirection(dir.toUpperCase(), map));
-        		
-        		
+        	case 2:
+        		System.out.println("Introduzca North, West, South o East para avanzar\n");
+        		String dir = scan.nextLine().toUpperCase();
+        		if( dir == "SOUTH" || dir == "NORTH" || dir == "WEST" || dir == "EAST") {
+	        		
+	        		if( player.moveInDirection(dir, map) == Direction.NOEXIT ) {
+	        			System.out.println("No puedes avanzar en esa dirección");
+	        		}
+        		}
+        		else {
+        			System.out.println("ERROR. Introduzca una dirección válida");
+        		}
         		break;
-        	case "terminar":
+        	case 3:
+        		System.out.println("Terminando el juego");
         		break;
         	default:
         		System.out.println("Introduzca un input válido");
         		break;
         	}
         	
-        }while( input.equalsIgnoreCase("terminar") == false );
+        }while( input != 3 );
         
         System.out.println("\n\tThe end \n\tGRACIAS POR JUGAR");
         
