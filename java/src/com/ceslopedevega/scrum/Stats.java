@@ -24,9 +24,7 @@ public class Stats {
 	//TODO añadir stats según las necesitemos
 	
 	public Stats() {
-		
 		this ( DEFAULT_AD, DEFAULT_HP, DEFAULT_CHARISMA, DEFAULT_MONEY, DEFAULT_FACTION );
-		
 	}
 	
 	public Stats ( int AD, int HP, int charisma, int money, String faction ) {
