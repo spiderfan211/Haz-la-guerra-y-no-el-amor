@@ -76,7 +76,11 @@ public class Loop {
         	 * (si tiene un enemigo, un cofre y x salidas, 
         	 * tendrá más opciones que si solo tiene salidas y ya está)
         	 * */
+        	try {
         	input = scan.nextInt();
+        	}catch(InputMismatchException e) {
+        		System.out.println("ERROR: Tipo erróneo");
+        	}
         	scan.nextLine();
         	switch( input ) {
         	case 1:
@@ -84,11 +88,14 @@ public class Loop {
         		break;
         	case 2:
         		System.out.println("Introduzca North, West, South o East para avanzar\n");
-        		String dir = scan.nextLine().toUpperCase();
-        		if( dir == "SOUTH" || dir == "NORTH" || dir == "WEST" || dir == "EAST") {
+        		String dir = scan.nextLine();
+        		if( dir.equalsIgnoreCase(Direction.SOUTH.name())|| dir.equalsIgnoreCase(Direction.NORTH.name()) || dir.equalsIgnoreCase(Direction.WEST.name()) || dir.equalsIgnoreCase(Direction.EAST.name())) {
 	        		
 	        		if( player.moveInDirection(dir, map) == Direction.NOEXIT ) {
 	        			System.out.println("No puedes avanzar en esa dirección");
+	        		}
+	        		else {
+	        			
 	        		}
         		}
         		else {
