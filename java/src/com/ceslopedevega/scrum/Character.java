@@ -1,9 +1,14 @@
 package com.ceslopedevega.scrum;
 
+import java.io.Serializable;
 import java.util.*;
 
-public abstract class Character {
+public abstract class Character implements Serializable{
 	
+	private static final long serialVersionUID = 3696731703160360752L;
+
+
+
 	private static final String DEFAULT_NAME = "Jeff";
 
 	
@@ -74,9 +79,10 @@ public abstract class Character {
 	}
 
 	
-	
-	
-	
+
+	public void describeRoom() {
+		this.room.describeRoom();
+	}	
 	
 	
 }

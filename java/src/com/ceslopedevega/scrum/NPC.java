@@ -1,8 +1,14 @@
 package com.ceslopedevega.scrum;
 
+import java.io.Serializable;
 import java.util.*;
 
-public class NPC extends Character{
+public class NPC extends Character implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -5882170143125291894L;
+
 	private static final int DEFAULT_LOYALTY = 0;
 
 	private int loyalty;
@@ -22,6 +28,7 @@ public class NPC extends Character{
 		super( name, AD, HP, charisma, money, faction, room );
 		this.loyalty = loyalty;
 	}
+	
 	
 	
 	

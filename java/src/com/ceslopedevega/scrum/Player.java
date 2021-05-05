@@ -1,12 +1,18 @@
 package com.ceslopedevega.scrum;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Player extends Character{
+public class Player extends Character implements Serializable{
 
 	//TODO definir características exclusivas de Player respecto a NPC, métodos de subir de nivel y tal
 	//Si no encontramos una razón de ser para esta clase, debería fusionarse con NPC, 
 	//quitarle la abstracción a Character.java, y eliminar la herencia
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5563218870108425511L;
 
 	public Player() {
 		super();
@@ -64,6 +70,17 @@ public class Player extends Character{
         return exit;
     }
     
-	
+	public void takeItemsFromRoom() {
+		if (this.getRoom().atLeastOneItem()) {
+			this.setItems(this.getRoom().takeItems());
+		}
+		else {
+			System.out.println("No hay objetos que coger en la habitación");
+		}
+	}
+
+	public void options() {
+		this.getRoom().options();
+	}
 	
 }

@@ -1,10 +1,15 @@
 package com.ceslopedevega.scrum;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Room {
+public class Room implements Serializable{
 	
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1060844547780279432L;
 	private static final String DEFAULT_NAME = "Sala inicial";
 	private static final int DEFAULT_INDEX = 0;
 	private static final String DEFAULT_DESCRIPTION = "Primera sala del juego";
@@ -108,7 +113,7 @@ public class Room {
 		for( Item i : items) {
 			todos += i;
 		}
-		return todos	;
+		return todos;
 	}
 
 	private String describeSalidas() {
@@ -120,24 +125,24 @@ public class Room {
 
 		if( this.n != Direction.NOEXIT ) {
 			alguna_salida = true;
-			salida_norte = "una salida al norte ";
+			salida_norte = " una salida al norte";
 		}
 		if( this.s != Direction.NOEXIT ) {
 			alguna_salida = true;
-			salida_sur = " una salida al sur ";
+			salida_sur = " una salida al sur";
 		}
 		if( this.w != Direction.NOEXIT ) {
 			alguna_salida = true;
-			salida_oeste = " una salida al oeste ";
+			salida_oeste = " una salida al oeste";
 		}
 		if( this.e != Direction.NOEXIT ) {
 			alguna_salida = true;
-			salida_este = " una salida al este ";
+			salida_este = " una salida al este";
 		}
 		
 		
 		if( alguna_salida == true ) {
-			return "Ves " + salida_norte + salida_sur + salida_oeste + salida_este ;
+			return "Ves" + salida_norte + salida_sur + salida_oeste + salida_este ;
 			/*Hay que implementar mejor el string para que se vea mejor redactado, con comas y tal*/
 		}
 		else {
@@ -147,5 +152,26 @@ public class Room {
 		}
 	}
 	
+	public boolean atLeastOneItem() {
+		return !(this.items.isEmpty());
+	}
+	
+	public ArrayList<Item> takeItems() {
+		ArrayList<Item> temp = this.items;
+		this.items.clear();
+		return temp;
+	}
+
+	public void options() {
+		int option = 3;
+		System.out.println("\n¿Qué quieres hacer?");
+		System.out.println("\n\t1) Describir la estancia");
+		System.out.println("\n\t2) Desplazarse en una dirección");
+		if(!this.items.isEmpty()){
+			System.out.println("\n\t" + option + ") Coger los objetos de la habitación");
+			option++;
+		}
+		System.out.println("\n\t" + option +  ") Terminar el juego");
+	}
 	
 }

@@ -21,7 +21,6 @@ public class Item {
 	}
 	
 	
-	//TODO metodos para manejar items ( intercambiar, vender, comprar )
 	
 	
 }
