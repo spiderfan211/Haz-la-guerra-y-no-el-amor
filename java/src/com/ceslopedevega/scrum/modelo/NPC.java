@@ -1,4 +1,4 @@
-package com.ceslopedevega.scrum;
+package com.ceslopedevega.scrum.modelo;
 
 import java.io.Serializable;
 import java.util.*;

@@ -1,4 +1,4 @@
-package com.ceslopedevega.scrum;
+package com.ceslopedevega.scrum.modelo;
 
 public enum Faction {
 	ORDEN,

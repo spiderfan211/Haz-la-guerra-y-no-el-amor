@@ -1,8 +1,14 @@
-package com.ceslopedevega.scrum;
+package com.ceslopedevega.scrum.modelo;
 
-public class Stats {
+import java.io.Serializable;
+
+public class Stats implements Serializable{
 	
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1077801330251971755L;
 	private static final int DEFAULT_AD = 1;
 	private static final int DEFAULT_HP = 1;
 	private static final int DEFAULT_CHARISMA = 1;

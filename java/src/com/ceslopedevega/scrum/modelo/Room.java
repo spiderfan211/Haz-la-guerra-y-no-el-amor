@@ -1,4 +1,4 @@
-package com.ceslopedevega.scrum;
+package com.ceslopedevega.scrum.modelo;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -163,15 +163,14 @@ public class Room implements Serializable{
 	}
 
 	public void options() {
-		int option = 3;
 		System.out.println("\n¿Qué quieres hacer?");
 		System.out.println("\n\t1) Describir la estancia");
 		System.out.println("\n\t2) Desplazarse en una dirección");
 		if(!this.items.isEmpty()){
-			System.out.println("\n\t" + option + ") Coger los objetos de la habitación");
-			option++;
+			System.out.println("\n\t3) Coger los objetos de la habitación");
 		}
-		System.out.println("\n\t" + option +  ") Terminar el juego");
+		System.out.println("\n\t5) Guardar la partida");
+		System.out.println("\n\t6) Terminar el juego");
 	}
 	
 }
