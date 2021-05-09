@@ -1,4 +1,4 @@
-package com.ceslopedevega.scrum;
+package com.ceslopedevega.scrum.modelo;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -16,20 +16,38 @@ public class Room implements Serializable{
 	private static final int DEFAULT_N = Direction.NOEXIT;
 	private static final int DEFAULT_S = Direction.NOEXIT;
 	private static final int DEFAULT_W = Direction.NOEXIT;
-	private static final int DEFAUL_E = Direction.NOEXIT;
+	private static final int DEFAULT_E = Direction.NOEXIT;
+	private static final NPC DEFAULT_ENEMY = new NPC();
 
 	
+	public ArrayList<Item> getItems() {
+		return items;
+	}
+
+	public void setItems(ArrayList<Item> items) {
+		this.items = items;
+	}
+
+	public NPC getEnemy() {
+		return enemy;
+	}
+
+	public void setEnemy(NPC enemy) {
+		this.enemy = enemy;
+	}
+
 	private String name;
 	private int index;
 	private String description;
 	private int n, s, w, e;
 	private ArrayList<Item> items;
+	private NPC enemy;
 	
 	public Room () {
-        this( DEFAULT_NAME, DEFAULT_INDEX, DEFAULT_DESCRIPTION, DEFAULT_N, DEFAULT_S, DEFAULT_W, DEFAUL_E);
+        this( DEFAULT_NAME, DEFAULT_INDEX, DEFAULT_DESCRIPTION, DEFAULT_N, DEFAULT_S, DEFAULT_W, DEFAULT_E, DEFAULT_ENEMY);
 	}
 	
-	public Room(String name, int index, String description, int n, int s, int w, int e) {
+	public Room(String name, int index, String description, int n, int s, int w, int e, NPC enemy) {
         this.name = name;
         this.index = index;
         this.description = description;
@@ -38,6 +56,7 @@ public class Room implements Serializable{
         this.w = w;
         this.e = e;
         this.items = new ArrayList<Item>();
+        this.enemy = enemy;
     }
 
     // norte
@@ -163,15 +182,25 @@ public class Room implements Serializable{
 	}
 
 	public void options() {
-		int option = 3;
 		System.out.println("\n¿Qué quieres hacer?");
 		System.out.println("\n\t1) Describir la estancia");
-		System.out.println("\n\t2) Desplazarse en una dirección");
+		System.out.println("\n\t2) Mostrar las estadísticas del jugador");
+		System.out.println("\n\t3) Desplazarse en una dirección");
 		if(!this.items.isEmpty()){
-			System.out.println("\n\t" + option + ") Coger los objetos de la habitación");
-			option++;
+			System.out.println("\n\t4) Coger los objetos de la habitación");
 		}
-		System.out.println("\n\t" + option +  ") Terminar el juego");
+		if(this.enemy!=null){
+			System.out.println("\n\t5) Pelear con el enemigo de la sala");
+		}
+		System.out.println("\n\t6) Guardar la partida");
+		
+		System.out.println("\n\t10) Terminar el juego");
+	}
+	
+	public int enemyDeath() {
+		int money = this.enemy.getStats().getMoney();
+		this.enemy = null;
+		return money;
 	}
 	
 }

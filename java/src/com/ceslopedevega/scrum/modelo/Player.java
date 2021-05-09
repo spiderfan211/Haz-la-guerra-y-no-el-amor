@@ -1,4 +1,4 @@
-package com.ceslopedevega.scrum;
+package com.ceslopedevega.scrum.modelo;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -22,8 +22,8 @@ public class Player extends Character implements Serializable{
 		super( name, room );
 	}
 	
-	public Player( String name, int AD, int HP, int charisma, int money, String faction, Room room) {
-		super( name, AD, HP, charisma, money, faction, room );
+	public Player( String name, int AD, int HP, int defense, int charisma, int money, String faction, Room room) {
+		super( name, AD, HP, defense, charisma, money, faction, room );
 	}
 	
 
@@ -81,6 +81,36 @@ public class Player extends Character implements Serializable{
 
 	public void options() {
 		this.getRoom().options();
+	}
+	
+	
+	
+	
+	public int attack() {	//returns 0, if both contestants are still alive, -1 if the player has died, or 1 if the enemy is dead after the fight
+		int herodmg = (super.getStats().getAD() - super.getRoom().getEnemy().getStats().getDefense());
+		int enemydmg = (super.getRoom().getEnemy().getStats().getAD() - super.getStats().getDefense());
+		super.getRoom().getEnemy().getStats().setHP(super.getRoom().getEnemy().getStats().getHP()- herodmg);
+		super.getStats().setHP(super.getStats().getHP()-enemydmg);
+		
+		if(super.isDead()) {
+			return -1;
+		}
+		else if(super.getRoom().getEnemy().isDead()) {
+			return 1;
+		}
+		else return 0;
+	}
+	
+	public String battleStatus() {
+		return ("\nPlayer HP: " + super.getStats().getHP() + "\nEnemy HP: " + super.getRoom().getEnemy().getStats().getHP());
+	}
+	
+	public void enemyDeath() {
+		super.addMoney(super.getRoom().enemyDeath());
+	}
+	
+	public void showStats() {
+		this.getStats().showStats();
 	}
 	
 }
