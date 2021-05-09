@@ -109,8 +109,6 @@ public class Player extends Character implements Serializable{
 		super.addMoney(super.getRoom().enemyDeath());
 	}
 	
-	public void showStats() {
-		this.getStats().showStats();
-	}
+	
 	
 }
