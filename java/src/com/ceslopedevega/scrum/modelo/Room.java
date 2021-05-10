@@ -19,22 +19,6 @@ public class Room implements Serializable{
 	private static final int DEFAULT_E = Direction.NOEXIT;
 	private static final NPC DEFAULT_ENEMY = new NPC();
 
-	
-	public ArrayList<Item> getItems() {
-		return items;
-	}
-
-	public void setItems(ArrayList<Item> items) {
-		this.items = items;
-	}
-
-	public NPC getEnemy() {
-		return enemy;
-	}
-
-	public void setEnemy(NPC enemy) {
-		this.enemy = enemy;
-	}
 
 	private String name;
 	private int index;
@@ -58,6 +42,38 @@ public class Room implements Serializable{
         this.items = new ArrayList<Item>();
         this.enemy = enemy;
     }
+	
+	public Room(String name, int index, String description, int n, int s, int w, int e, NPC enemy, ArrayList<Item> items) {
+        this.name = name;
+        this.index = index;
+        this.description = description;
+        this.n = n;
+        this.s = s;
+        this.w = w;
+        this.e = e;
+        this.items = items;
+        this.enemy = enemy;
+    }
+	
+	public ArrayList<Item> getItems() {
+		return items;
+	}
+
+	public void setItems(ArrayList<Item> items) {
+		this.items = items;
+	}
+	
+	public void addItem(Item item) {
+		this.items.add(item);
+	}
+
+	public NPC getEnemy() {
+		return enemy;
+	}
+
+	public void setEnemy(NPC enemy) {
+		this.enemy = enemy;
+	}
 
     // norte
     public int getN() {
@@ -136,12 +152,14 @@ public class Room implements Serializable{
 		}
 	}
 
+	
+	
 	private String describeItems() {
-		String todos = "";
-		for( Item i : items) {
-			todos += i;
+		String temp = "";
+		for(int i=0; i < this.items.size(); i++) {
+			temp = (temp + this.items.get(i).showItem());
 		}
-		return todos;
+		return temp;
 	}
 
 	private String describeSalidas() {
@@ -185,35 +203,53 @@ public class Room implements Serializable{
 	}
 	
 	public ArrayList<Item> takeItems() {
-		ArrayList<Item> temp = this.items;
+		ArrayList<Item> temp = new ArrayList<>();
+		
+		for(int i = 0; i < this.items.size(); i++) {
+			temp.add(items.get(i));
+		}
+		
 		this.items.clear();
+
 		return temp;
 	}
 
-	public void options() {
+	public void options(Player player) {
 		System.out.println("\n¿Qué quieres hacer?");
 		System.out.println("\n\t1) Describir la estancia");
 		System.out.println("\n\t2) Mostrar las estadísticas del jugador");
-		System.out.println("\n\t3) Desplazarse en una dirección");
+		System.out.println("\n\t3) Mostrar los objetos del inventario del jugador");
+		System.out.println("\n\t4) Desplazarse en una dirección");
 		if(!this.items.isEmpty()){
-			System.out.println("\n\t4) Coger los objetos de la habitación");
+			System.out.println("\n\t5) Coger los objetos de la habitación");
 		}
 		if(this.enemy!=null){
-			System.out.println("\n\t5) Pelear con el enemigo de la sala");
+			System.out.println("\n\t6) Pelear con el enemigo de la sala");
 		}
+		System.out.println("\n\t7) Usar un objeto de tu inventario");
 		System.out.println("\n\t9) Guardar la partida");
 		
 		System.out.println("\n\t10) Terminar el juego");
+		if(this.enemy!=null){
+			System.out.println("\n¡La batalla se acerca! Las salidas permanecerán cerradas mientras el enemigo siga con vida. ¡Destrúyelo!");
+		}
 	}
 	
-	public int enemyDeath() {
+	public void enemyDeath(Player player) {
 		int money = this.enemy.getStats().getMoney();
+		ArrayList<Item> items = this.enemy.getItems();
 		this.enemy = null;
-		return money;
+		player.addMoney(money);
+		player.addItems(items);
+		
 	}
 	
 	public void addMonster(NPC enemy) {
 		this.enemy = enemy;
+	}
+	
+	public boolean closedRoom() {
+		return (this.enemy != null);
 	}
 	
 }

@@ -80,6 +80,7 @@ public class Loop {
         int input = -1;
         
         do {
+        	
         	if(input != 1) {    		
         		player.describeRoom();
 			}
@@ -112,16 +113,32 @@ public class Loop {
 				}
         		break;
         	case 3:
-        		advance();
+        		System.out.println(player.showItems());
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
         		break;
         	case 4:
-        		/*Coger objetos*/
+        		advance();
         		break;
         	case 5:
-        		battle();
+        		takeRoomItems();
+        		break;
+        	case 6:
+        		input = battle();
+        		break;
+        	case 7:
+        		chooseItem();
         		break;
         	case 9:
         		saveGame();
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
         		break;
         	case 10:
         		System.out.println("Terminando el juego");
@@ -133,6 +150,11 @@ public class Loop {
         		break;
         	default:
         		System.out.println("Introduzca un input válido");
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
         		break;
         	}
         }while( input != 10 );
@@ -143,8 +165,32 @@ public class Loop {
 	}
 
 	
-	private static void battle() {
+	private static void chooseItem() {
+		System.out.println("\nElija un item que usar");
+		int n = player.showItemsForChoosing();
+		
+		int i = -1;
+		try {
+			i = scan.nextInt();
+			scan.nextLine();
+		}catch(InputMismatchException e) {
+			System.out.println("ERROR. Input no válido. Debía introducir un número");
+		}
+		if( i>=0 && i<n ) {
+			player.useItem(i);
+		}
+	}
+
+
+	private static void takeRoomItems() {
+		player.takeItemsFromRoom();
+		
+	}
+
+
+	private static int battle() {
 		int continuebattle;
+		int bien = 0;
 		System.out.println("\nComienza la batalla");
 		
 		do{
@@ -162,37 +208,46 @@ public class Loop {
 		if(continuebattle == 1) {
 			player.enemyDeath();
 			System.out.println("\n¡Enhorabuena! Has ganado la pelea.");
+			bien = 0;
+		}else {
+			System.out.println("\nTe han derrotado. Sientes el dulce beso de la muerte en tus labios y expiras tu último aliento. Fin del juego.");
+			bien = 10;
 		}
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
 			System.out.println("La espera de 1 s ha dado algún error.");
 		}
-		//TODO añadir manejo de muerte del jugador
+		return bien;
 		
 	}
 
 
 	private static void advance() {
-		System.out.println("Introduzca norte, sur, este u oeste para avanzar\n");
-		String dir = scan.nextLine();
-		if( dir.equalsIgnoreCase(Direction.SUR.name())|| dir.equalsIgnoreCase(Direction.NORTE.name()) || dir.equalsIgnoreCase(Direction.OESTE.name()) || dir.equalsIgnoreCase(Direction.ESTE.name())) {
-    		
-    		if( player.moveInDirection(dir, map) == Direction.NOEXIT ) {
-    			System.out.println("No puedes avanzar en esa dirección");
-    		}
-    		else {
-    			
-    		}
+		if(player.getRoom().closedRoom()) {
+			System.out.println("\nLas salidas están bloqueadas. ¡Acaba con el enemigo!");
+		}else {
+			System.out.println("Introduzca norte, sur, este u oeste para avanzar\n");
+			String dir = scan.nextLine();
+			if( dir.equalsIgnoreCase(Direction.SUR.name())|| dir.equalsIgnoreCase(Direction.NORTE.name()) || dir.equalsIgnoreCase(Direction.OESTE.name()) || dir.equalsIgnoreCase(Direction.ESTE.name())) {
+	    		
+	    		if( player.moveInDirection(dir, map) == Direction.NOEXIT ) {
+	    			System.out.println("No puedes avanzar en esa dirección");
+	    		}
+	    		else {
+	    			
+	    		}
+			}
+			else {
+				System.out.println("ERROR. Introduzca una dirección válida");
+			}
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				System.out.println("La espera de 1 s ha dado algún error.");
+			}
 		}
-		else {
-			System.out.println("ERROR. Introduzca una dirección válida");
-		}
-		try {
-			Thread.sleep(1000);
-		} catch (InterruptedException e) {
-			System.out.println("La espera de 1 s ha dado algún error.");
-		}
+		
 		
 	}
 

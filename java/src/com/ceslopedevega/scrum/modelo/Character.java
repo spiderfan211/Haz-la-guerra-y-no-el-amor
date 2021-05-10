@@ -37,12 +37,20 @@ public abstract class Character implements Serializable{
 		
 	}
 
-	public Character( String name, int AD, int HP, int defense, int charisma, int money, String faction, Room room) {
+	public Character( String name, int AD, int HP, int maxHP, int defense, int charisma, int money, String faction, Room room) {
 		
 		this.name = name;
-		this.stats = new Stats( AD, HP, defense, charisma, money, faction );
+		this.stats = new Stats( AD, HP, maxHP, defense, charisma, money, faction );
 		this.room = room;
 		this.items = new ArrayList<Item>();
+	}
+	
+	public Character( String name, int AD, int HP, int maxHP, int defense, int charisma, int money, String faction, Room room, ArrayList<Item> items) {
+		
+		this.name = name;
+		this.stats = new Stats( AD, HP, maxHP, defense, charisma, money, faction );
+		this.room = room;
+		this.items = items;
 	}
 	
 	public ArrayList<Item> getItems() {
@@ -94,6 +102,15 @@ public abstract class Character implements Serializable{
 	
 	public String showStats() {
 		return this.stats.showStats();
+	}
+	
+	public String showItems() {
+		String temp = "";
+		for(int i=0; i < this.items.size(); i++) {
+			temp = (temp + this.items.get(i).showItem());
+		}
+		if (temp == "") temp = "\nEl inventario está vacío";
+		return temp;
 	}
 	
 }

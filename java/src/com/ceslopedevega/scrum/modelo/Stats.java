@@ -11,6 +11,7 @@ public class Stats implements Serializable{
 	private static final long serialVersionUID = 1077801330251971755L;
 	private static final int DEFAULT_AD = 1;
 	private static final int DEFAULT_HP = 1;
+	private static final int DEFAULT_MAXHP = 1;
 	private static final int DEFAULT_DEFENSE = 1;
 	private static final int DEFAULT_CHARISMA = 1;
 	private static final int DEFAULT_MONEY = 1;
@@ -25,6 +26,7 @@ public class Stats implements Serializable{
 	
 	private int AD;
 	private int HP;
+	private int maxHP;
 	private int defense;
 	private int charisma;
 	private int money;
@@ -32,12 +34,13 @@ public class Stats implements Serializable{
 	//TODO añadir stats según las necesitemos
 	
 	public Stats() {
-		this ( DEFAULT_AD, DEFAULT_HP, DEFAULT_DEFENSE, DEFAULT_CHARISMA, DEFAULT_MONEY, DEFAULT_FACTION );
+		this ( DEFAULT_AD, DEFAULT_HP, DEFAULT_MAXHP, DEFAULT_DEFENSE, DEFAULT_CHARISMA, DEFAULT_MONEY, DEFAULT_FACTION );
 	}
 	
-	public Stats ( int AD, int HP, int defense, int charisma, int money, String faction ) {
+	public Stats ( int AD, int HP, int maxHP, int defense, int charisma, int money, String faction ) {
 		this.AD = AD;
 		this.HP = HP;
+		this.maxHP = maxHP;
 		this.defense= defense;
 		this.charisma = charisma;
 		this.money = money;
@@ -92,11 +95,16 @@ public class Stats implements Serializable{
 
 	public String showStats() {
 		return ("\nPuntos de vida: " + this.HP
+				+ "\nPuntos máximos de vida: " + this.maxHP
 				+ "\nPuntos de ataque: " + this.AD
 				+ "\nPuntos de defensa: " + this.defense
 				+ "\nPuntos de carisma: " + this.charisma
 				+ "\nMonedas de oro: " + this.money
 				+ "\nFacción: " + this.faction);
+	}
+	
+	public void healHP() {
+		this.HP = this.maxHP;
 	}
 	
 	

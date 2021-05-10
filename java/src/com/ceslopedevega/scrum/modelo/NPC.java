@@ -12,7 +12,6 @@ public class NPC extends Character implements Serializable{
 	private static final int DEFAULT_LOYALTY = 0;
 
 	private int loyalty;
-	//TODO añadir más atributos pertinentes a NPCs
 	
 	public NPC() {
 		super();
@@ -24,8 +23,13 @@ public class NPC extends Character implements Serializable{
 		this.loyalty = loyalty;
 	}
 	
-	public NPC ( String name, int AD, int HP, int defense, int charisma, int money, String faction, Room room, int loyalty) {
-		super( name, AD, HP, defense, charisma, money, faction, room );
+	public NPC ( String name, int AD, int HP, int maxHP, int defense, int charisma, int money, String faction, Room room, int loyalty) {
+		super( name, AD, HP, maxHP, defense, charisma, money, faction, room );
+		this.loyalty = loyalty;
+	}
+	
+	public NPC ( String name, int AD, int HP, int maxHP, int defense, int charisma, int money, String faction, Room room, int loyalty, ArrayList<Item> items) {
+		super( name, AD, HP, maxHP, defense, charisma, money, faction, room, items );
 		this.loyalty = loyalty;
 	}
 	
