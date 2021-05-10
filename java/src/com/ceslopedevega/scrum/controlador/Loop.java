@@ -16,19 +16,7 @@ import com.ceslopedevega.scrum.modelo.Room;
 
 public class Loop {
 	
-	/**
-     * ****** THE MAP ******* 
-     *  Para tener una referencia, esto es un ejemplo 
-     *  de cómo estarían conectadas las habitaciones:
-     *
-     * room0 -- room1 
-     *   | 
-     * room2 -- room3 
-     *   |        |
-     * room4 -- room5
-     *
-     ************************
-     */
+	
 	private static ArrayList<Room> map;
 	private static Scanner scan = new Scanner(System.in);
 	private static Player player;
@@ -36,20 +24,6 @@ public class Loop {
 	public static void play() {
 		
 		map = new ArrayList<Room>();
-		
-		// --- Construcción del mapa ---
-        // --- Room( name, description,N, S, W, E )
-		/*
-        map.add(new Room("room0", 0,  "Te encuentras en una plaza, vacía y pavimentada", Direction.NOEXIT, 2, Direction.NOEXIT, 1));
-        map.add(new Room("room1", 1, "Te encuentras en una casa blanca al este de la plaza.", Direction.NOEXIT, Direction.NOEXIT, 0, Direction.NOEXIT));
-        map.add(new Room("room2", 2, "Estás en la casa dorada, al sur de la plaza.", 0, 4, Direction.NOEXIT, 3));
-        map.add(new Room("room3", 3, "Estás en la habitación de los trolls, al este de la casa dorada.", Direction.NOEXIT, 5, 2, Direction.NOEXIT));
-        map.add(new Room("room4", 4, "Has llegado a una cueva oscura. No ves casi nada, pero sabes que has venido desde el norte.", 2, Direction.NOEXIT, Direction.NOEXIT, 5));
-        map.add(new Room("room5", 5, "Has llegado a la sala final. Enhorabuena.", 3, Direction.NOEXIT, 4, Direction.NOEXIT));
-        */
-        // Crear jugador y posicionarlo en la habitación inicial ( la 0 )
-        
-		
         /*
          * Concepto inicial de loop jugable:
          * El jugador comienza en la sala de inicio.
@@ -58,10 +32,6 @@ public class Loop {
          * se volverá a mostrar la descripción de la sala.
          * 
          */
-        
-        /*TODO System.out.println("¿Quiere cargar los datos de juego de otra partida?");
-        System.out.println("Estos los archivos de guardado existentes: ");
-        listofRecentFile();*/
         
         System.out.println("¿Desea cargar una partida guardada? \n(Pulse 1 para cargar, cualquier otro número para empezar un juego nuevo.)");
         int cargar = 0;
@@ -81,30 +51,35 @@ public class Loop {
         	}
         }
         else {
-        	System.out.println("\nNo se cargará la partida. Empezando aventura nueva...");
+        	/**
+             * ****** THE MAP ******* 
+             *  Para tener una referencia, esto es un ejemplo 
+             *  de cómo estarían conectadas las habitaciones (por defecto):
+             *
+             * room0 -- room1 
+             *   | 
+             * room2 -- room3 
+             *   |        |
+             * room4 -- room5
+             *
+             ************************
+             */
+        	System.out.println("\nNo se cargará la partida. Empezando aventura nueva con el mapa por defecto...");
+        	
+        	map.add(new Room("room0", 0,  "Te encuentras en una plaza, vacía y pavimentada", Direction.NOEXIT, 2, Direction.NOEXIT, 1, null));
+            map.add(new Room("room1", 1, "Te encuentras en una casa blanca al este de la plaza.", Direction.NOEXIT, Direction.NOEXIT, 0, Direction.NOEXIT, null));
+            map.add(new Room("room2", 2, "Estás en la casa dorada, al sur de la plaza.", 0, 4, Direction.NOEXIT, 3, null));
+            map.add(new Room("room3", 3, "Estás en la habitación de los trolls, al este de la casa dorada.", Direction.NOEXIT, 5, 2, Direction.NOEXIT, null));
+            map.add(new Room("room4", 4, "Has llegado a una cueva oscura. No ves casi nada, pero sabes que has venido desde el norte.", 2, Direction.NOEXIT, Direction.NOEXIT, 5, null));
+            map.add(new Room("room5", 5, "Has llegado a la sala final. Enhorabuena.", 3, Direction.NOEXIT, 4, Direction.NOEXIT, null));
+            player = new Player( "Ganon", map.get(0) );
         }
         
-        player = new Player( "Ganon", map.get(0) );
+        
         
         int input = -1;
         
         do {
-        	
-        	/*
-        	 * Para la pregunta de ingreso por consola
-        	 * se podría preguntar qué se desea hacer,
-        	 * seguido de opciones que se valorarían 
-        	 * con un switch, como:
-        	 *  - Entablar conversación con un NPC
-        	 *  - Recoger un item
-        	 *  - Entrar en combate
-        	 *  - Pasar por una puerta
-        	 * Las opciones disponibles deberán depender
-        	 * de lo que contenga la habitación
-        	 * (si tiene un enemigo, un cofre y x salidas, 
-        	 * tendrá más opciones que si solo tiene salidas y ya está)
-        	 * */
-        	
         	if(input != 1) {    		
         		player.describeRoom();
 			}
@@ -129,7 +104,7 @@ public class Loop {
 				}
         		break;
         	case 2:
-        		player.showStats();
+        		System.out.println(player.showStats());
         		try {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {
@@ -137,48 +112,15 @@ public class Loop {
 				}
         		break;
         	case 3:
-        		System.out.println("Introduzca North, West, South o East para avanzar\n");
-        		String dir = scan.nextLine();
-        		if( dir.equalsIgnoreCase(Direction.SOUTH.name())|| dir.equalsIgnoreCase(Direction.NORTH.name()) || dir.equalsIgnoreCase(Direction.WEST.name()) || dir.equalsIgnoreCase(Direction.EAST.name())) {
-	        		
-	        		if( player.moveInDirection(dir, map) == Direction.NOEXIT ) {
-	        			System.out.println("No puedes avanzar en esa dirección");
-	        		}
-	        		else {
-	        			
-	        		}
-        		}
-        		else {
-        			System.out.println("ERROR. Introduzca una dirección válida");
-        		}
-        		try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					System.out.println("La espera de 1 s ha dado algún error.");
-				}
+        		advance();
         		break;
         	case 4:
         		/*Coger objetos*/
         		break;
         	case 5:
-        		int continuebattle;
-        		System.out.println("\nComienza la batalla");
-        		do{
-        			continuebattle = player.attack();
-        			System.out.println(player.battleStatus());
-        		}while(continuebattle!=0);
-        		
-        		if(continuebattle == 1) {
-        			player.enemyDeath();
-        			System.out.println("\n¡Enhorabuena! Has ganado la pelea.");
-        		}
-        		try {
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					System.out.println("La espera de 1 s ha dado algún error.");
-				}
+        		battle();
         		break;
-        	case 6:
+        	case 9:
         		saveGame();
         		break;
         	case 10:
@@ -201,6 +143,60 @@ public class Loop {
 	}
 
 	
+	private static void battle() {
+		int continuebattle;
+		System.out.println("\nComienza la batalla");
+		
+		do{
+			System.out.println(player.battleStatus());
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				System.out.println("La espera de 1 s ha dado algún error.");
+			}
+			continuebattle = player.attack();
+			System.out.println(player.battleStatus());
+			
+		}while(continuebattle==0);
+		
+		if(continuebattle == 1) {
+			player.enemyDeath();
+			System.out.println("\n¡Enhorabuena! Has ganado la pelea.");
+		}
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			System.out.println("La espera de 1 s ha dado algún error.");
+		}
+		//TODO añadir manejo de muerte del jugador
+		
+	}
+
+
+	private static void advance() {
+		System.out.println("Introduzca norte, sur, este u oeste para avanzar\n");
+		String dir = scan.nextLine();
+		if( dir.equalsIgnoreCase(Direction.SUR.name())|| dir.equalsIgnoreCase(Direction.NORTE.name()) || dir.equalsIgnoreCase(Direction.OESTE.name()) || dir.equalsIgnoreCase(Direction.ESTE.name())) {
+    		
+    		if( player.moveInDirection(dir, map) == Direction.NOEXIT ) {
+    			System.out.println("No puedes avanzar en esa dirección");
+    		}
+    		else {
+    			
+    		}
+		}
+		else {
+			System.out.println("ERROR. Introduzca una dirección válida");
+		}
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			System.out.println("La espera de 1 s ha dado algún error.");
+		}
+		
+	}
+
+
 	public static void saveGame()
 	{
         FileOutputStream file = null;

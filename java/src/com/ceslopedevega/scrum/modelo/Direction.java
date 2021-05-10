@@ -1,10 +1,10 @@
 package com.ceslopedevega.scrum.modelo;
 
 public enum Direction {
-	NORTH, 
-    SOUTH, 
-    EAST, 
-    WEST;
+	NORTE, 
+    SUR, 
+    ESTE, 
+    OESTE;
 	
     public static final int NOEXIT = -1;
 }

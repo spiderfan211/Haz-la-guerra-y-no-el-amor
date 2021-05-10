@@ -29,7 +29,14 @@ public class NPC extends Character implements Serializable{
 		this.loyalty = loyalty;
 	}
 	
-	
+	public void setRoom(Room room) {
+		super.setRoom(room);
+	}
+
+	@Override
+	public String toString() {
+		return ("Hay un enemigo en la sala. Su nombre es " + this.getName() + ", y sus estadísticas, \n" + this.showStats());
+	}
 	
 	
 }

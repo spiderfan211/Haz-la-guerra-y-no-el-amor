@@ -120,13 +120,22 @@ public class Room implements Serializable{
 	}
 	
 	public void describeRoom() {
-		System.out.println(this.description);
+		System.out.println("\n" + this.description);
 		System.out.println(this.describeSalidas());
 		System.out.println(this.describeItems());
+		System.out.println(this.describeNPC());
 		//más descripciones
 		
 	}
 	
+	private String describeNPC() {
+		try {
+			return this.enemy.toString();
+		}catch(NullPointerException e) {
+			return "";
+		}
+	}
+
 	private String describeItems() {
 		String todos = "";
 		for( Item i : items) {
@@ -192,7 +201,7 @@ public class Room implements Serializable{
 		if(this.enemy!=null){
 			System.out.println("\n\t5) Pelear con el enemigo de la sala");
 		}
-		System.out.println("\n\t6) Guardar la partida");
+		System.out.println("\n\t9) Guardar la partida");
 		
 		System.out.println("\n\t10) Terminar el juego");
 	}
@@ -201,6 +210,10 @@ public class Room implements Serializable{
 		int money = this.enemy.getStats().getMoney();
 		this.enemy = null;
 		return money;
+	}
+	
+	public void addMonster(NPC enemy) {
+		this.enemy = enemy;
 	}
 	
 }

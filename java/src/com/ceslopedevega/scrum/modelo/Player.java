@@ -48,16 +48,16 @@ public class Player extends Character implements Serializable{
         int exit;
         dir = dir.toUpperCase();
         switch (dir) {
-            case "NORTH":
+            case "NORTE":
                 exit = room.getN();
                 break;
-            case "SOUTH":
+            case "SUR":
                 exit = room.getS();
                 break;
-            case "EAST":
+            case "ESTE":
                 exit = room.getE();
                 break;
-            case "WEST":
+            case "OESTE":
                 exit = room.getW();
                 break;
             default:
@@ -89,6 +89,8 @@ public class Player extends Character implements Serializable{
 	public int attack() {	//returns 0, if both contestants are still alive, -1 if the player has died, or 1 if the enemy is dead after the fight
 		int herodmg = (super.getStats().getAD() - super.getRoom().getEnemy().getStats().getDefense());
 		int enemydmg = (super.getRoom().getEnemy().getStats().getAD() - super.getStats().getDefense());
+		if(enemydmg<0) enemydmg=0;
+		
 		super.getRoom().getEnemy().getStats().setHP(super.getRoom().getEnemy().getStats().getHP()- herodmg);
 		super.getStats().setHP(super.getStats().getHP()-enemydmg);
 		

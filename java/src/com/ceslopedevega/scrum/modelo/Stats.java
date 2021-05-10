@@ -90,8 +90,8 @@ public class Stats implements Serializable{
 		this.money = this.money + money;
 	}
 
-	public void showStats() {
-		System.out.println("\nPuntos de vida: " + this.HP
+	public String showStats() {
+		return ("\nPuntos de vida: " + this.HP
 				+ "\nPuntos de ataque: " + this.AD
 				+ "\nPuntos de defensa: " + this.defense
 				+ "\nPuntos de carisma: " + this.charisma

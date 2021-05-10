@@ -92,8 +92,8 @@ public abstract class Character implements Serializable{
 		this.getStats().addMoney(money);
 	}
 	
-	public void showStats() {
-		this.stats.showStats();
+	public String showStats() {
+		return this.stats.showStats();
 	}
 	
 }
