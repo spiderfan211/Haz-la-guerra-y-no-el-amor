@@ -15,14 +15,6 @@ public class Item implements Serializable{
 
 	private String name;
 	private int amount;
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	private boolean extraDefense;
 	private boolean extraAttack;
 	private boolean usable; //usable por ahora es solo para pociones -> implica que solo curan
@@ -51,6 +43,16 @@ public class Item implements Serializable{
 		this.extraAttack = extraAttack;
 		this.extraDefense = extraDefense;
 	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	
 	
 	public String showItem() {
 		return (name + ": " + amount + " unidades |");

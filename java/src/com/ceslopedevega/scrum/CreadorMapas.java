@@ -52,7 +52,7 @@ public class CreadorMapas {
 	        ArrayList<Item> enemyitems2 = new ArrayList<>();
 	        enemyitems2.add(new Item("Espadón del gran señor", 1, true, true));
 	        roomitems2.add(new Item("Humanidad", 2));
-	        enemy = new NPC("Gwyn", 10, 40, 40, 6, 0, 0, Faction.NONE.name(), null, 0, enemyitems2);
+	        enemy = new NPC("Gwyn", 8, 35, 35, 6, 0, 0, Faction.NONE.name(), null, 0, enemyitems2);
 	        map.add(new Room("room4", 4, "Has llegado a una cueva oscura. No ves casi nada, pero sabes que has venido desde el oeste.", 5, Direction.NOEXIT, 1, 5, enemy, roomitems2));
 	        enemy.setRoom(map.get(4));
 	        
