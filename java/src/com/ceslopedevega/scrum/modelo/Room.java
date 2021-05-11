@@ -136,10 +136,10 @@ public class Room implements Serializable{
 	}
 	
 	public void describeRoom() {
-		System.out.println("\n" + this.description);
-		System.out.println(this.describeSalidas());
+		System.out.println("\n\t" + this.description);
+		System.out.println("\t" + this.describeSalidas());
 		System.out.println(this.describeItems());
-		System.out.println(this.describeNPC());
+		System.out.println("\t" + this.describeNPC());
 		//más descripciones
 		
 	}
@@ -156,8 +156,11 @@ public class Room implements Serializable{
 	
 	private String describeItems() {
 		String temp = "";
-		for(int i=0; i < this.items.size(); i++) {
-			temp = (temp + this.items.get(i).showItem());
+		if(!this.items.isEmpty()) {
+			temp = (temp + "\tItems en el suelo de la sala: ");
+			for(int i=0; i < this.items.size(); i++) {
+				temp = (temp + this.items.get(i).showItem());
+			}
 		}
 		return temp;
 	}
@@ -215,7 +218,7 @@ public class Room implements Serializable{
 	}
 
 	public void options(Player player) {
-		System.out.println("\n¿Qué quieres hacer?");
+		System.out.println("\n\t¿Qué quieres hacer?");
 		System.out.println("\n\t1) Describir la estancia");
 		System.out.println("\n\t2) Mostrar las estadísticas del jugador");
 		System.out.println("\n\t3) Mostrar los objetos del inventario del jugador");

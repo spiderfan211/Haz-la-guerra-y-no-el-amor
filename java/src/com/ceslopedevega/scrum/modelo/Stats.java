@@ -94,13 +94,13 @@ public class Stats implements Serializable{
 	}
 
 	public String showStats() {
-		return ("\nPuntos de vida: " + this.HP
-				+ "\nPuntos máximos de vida: " + this.maxHP
-				+ "\nPuntos de ataque: " + this.AD
-				+ "\nPuntos de defensa: " + this.defense
-				+ "\nPuntos de carisma: " + this.charisma
-				+ "\nMonedas de oro: " + this.money
-				+ "\nFacción: " + this.faction);
+		return ("\n\tPuntos de vida: " + this.HP
+				+ "\n\tPuntos máximos de vida: " + this.maxHP
+				+ "\n\tPuntos de ataque: " + this.AD
+				+ "\n\tPuntos de defensa: " + this.defense
+				+ "\n\tPuntos de carisma: " + this.charisma
+				+ "\n\tMonedas de oro: " + this.money
+				+ "\n\tFacción: " + this.faction);
 	}
 	
 	public void healHP() {

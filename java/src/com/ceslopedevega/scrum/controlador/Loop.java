@@ -111,6 +111,8 @@ public class Loop {
 				} catch (InterruptedException e) {
 					System.out.println("La espera de 1 s ha dado algún error.");
 				}
+        		System.out.println("\nPulse cualquier tecla para continuar");
+        		scan.nextLine();
         		break;
         	case 3:
         		System.out.println(player.showItems());
@@ -119,18 +121,36 @@ public class Loop {
 				} catch (InterruptedException e) {
 					System.out.println("La espera de 1 s ha dado algún error.");
 				}
+        		System.out.println("\nPulse cualquier tecla para continuar");
+        		scan.nextLine();
         		break;
         	case 4:
         		advance();
         		break;
         	case 5:
         		takeRoomItems();
+        		System.out.println("\nPulse cualquier tecla para continuar");
+        		scan.nextLine();
         		break;
         	case 6:
         		input = battle();
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
+        		System.out.println("\nPulse cualquier tecla para continuar");
+        		scan.nextLine();
         		break;
         	case 7:
         		chooseItem();
+        		try {
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					System.out.println("La espera de 1 s ha dado algún error.");
+				}
+        		System.out.println("\nPulse cualquier tecla para continuar");
+        		scan.nextLine();
         		break;
         	case 9:
         		saveGame();
@@ -139,6 +159,8 @@ public class Loop {
 				} catch (InterruptedException e) {
 					System.out.println("La espera de 1 s ha dado algún error.");
 				}
+        		System.out.println("\nPulse cualquier tecla para continuar");
+        		scan.nextLine();
         		break;
         	case 10:
         		System.out.println("Terminando el juego");
@@ -155,6 +177,7 @@ public class Loop {
 				} catch (InterruptedException e) {
 					System.out.println("La espera de 1 s ha dado algún error.");
 				}
+        		scan.nextLine();
         		break;
         	}
         }while( input != 10 );
@@ -184,6 +207,7 @@ public class Loop {
 
 	private static void takeRoomItems() {
 		player.takeItemsFromRoom();
+		System.out.println("\n¡Has cogido los items del suelo! Han subido tus estadísticas");
 		
 	}
 
@@ -191,7 +215,7 @@ public class Loop {
 	private static int battle() {
 		int continuebattle;
 		int bien = 0;
-		System.out.println("\nComienza la batalla");
+		System.out.println("\n\t¡Comienza la batalla!");
 		
 		do{
 			System.out.println(player.battleStatus());
@@ -201,10 +225,9 @@ public class Loop {
 				System.out.println("La espera de 1 s ha dado algún error.");
 			}
 			continuebattle = player.attack();
-			System.out.println(player.battleStatus());
 			
 		}while(continuebattle==0);
-		
+		System.out.println("\nFinal de la batalla: " + player.battleStatus());
 		if(continuebattle == 1) {
 			player.enemyDeath();
 			System.out.println("\n¡Enhorabuena! Has ganado la pelea.");

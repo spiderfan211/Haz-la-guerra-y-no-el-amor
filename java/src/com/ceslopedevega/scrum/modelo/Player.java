@@ -101,7 +101,13 @@ public class Player extends Character implements Serializable{
 		int enemydmg = ((super.getRoom().getEnemy().getStats().getAD() - super.getStats().getDefense()) * (int) (Math.random() * 5) + 1);
 		if(enemydmg<0) enemydmg=0;
 		
+		System.out.println("\n\tDaño al enemigo: " + herodmg + " puntos");
+		System.out.println("\tDaño al jugador: " + enemydmg + " puntos");
+		
 		super.getRoom().getEnemy().getStats().setHP(super.getRoom().getEnemy().getStats().getHP()- herodmg);
+		if(super.getRoom().getEnemy().getStats().getHP() < 0) {
+			super.getRoom().getEnemy().getStats().setHP(0);
+		}
 		super.getStats().setHP(super.getStats().getHP()-enemydmg);
 		
 		if(super.isDead()) {
@@ -114,7 +120,7 @@ public class Player extends Character implements Serializable{
 	}
 	
 	public String battleStatus() {
-		return ("\nPlayer HP: " + super.getStats().getHP() + "\nEnemy HP: " + super.getRoom().getEnemy().getStats().getHP());
+		return ("\n\tVida del jugador: " + super.getStats().getHP() + "\n\tVida del enemigo: " + super.getRoom().getEnemy().getStats().getHP());
 	}
 	
 	public void enemyDeath() {
