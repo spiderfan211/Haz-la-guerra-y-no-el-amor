@@ -82,7 +82,7 @@ public class Player extends Character implements Serializable{
 				this.getItems().add(i);
 				i.upgradeStats(this);
 			}
-			
+			System.out.println("\n¡Has cogido los items del suelo! Han subido tus estadísticas");
 		}
 		else {
 			System.out.println("No hay objetos que coger en la habitación");
@@ -150,7 +150,6 @@ public class Player extends Character implements Serializable{
 			if (!stillare) {
 				this.getItems().remove(i);
 			}
-			System.out.println("\nPoción usada");
 		}
 		else {
 			System.out.println("\nEl objeto no es usable");
@@ -159,6 +158,7 @@ public class Player extends Character implements Serializable{
 	
 	public void potionHeal() {
 		this.getStats().healHP();
+		System.out.println("\n¡Te has curado!");
 	}
 	
 	public void upgradeAttack() {

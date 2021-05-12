@@ -30,34 +30,39 @@ public class CreadorMapas {
 		 * */
 		try {
 			map.add(new Room("room0", 0,  "Te encuentras en una plaza, vacía y pavimentada", 1, Direction.NOEXIT, Direction.NOEXIT, Direction.NOEXIT, null));
-	        map.add(new Room("room1", 1, "Te encuentras en una casa blanca al norte de la plaza.", 3, 0, 2, 4, null));
+			ArrayList<Item> roomitems0 = new ArrayList<>();
+			roomitems0.add(new Item("Espada rota", 1, false, true));
+			map.add(new Room("room1", 1, "Te encuentras en una casa blanca al norte de la plaza.", 3, 0, 2, 4, null, roomitems0));
 	        
 	        ArrayList<Item> roomitems = new ArrayList<>();
 	        ArrayList<Item> enemyitems = new ArrayList<>();
 	        roomitems.add(new Item("Espada Maestra", 1, false, true));
 	        roomitems.add(new Item("Escudo de Hyrule", 1, true, false));
 	        enemyitems.add(new Item("Garras", 1, false, true));
-	        enemy = new NPC("Lady Dimitrescu", 4, 20, 20, 4, 10, 100, Faction.NONE.name(), null, 0, enemyitems);
+	        enemy = new NPC("Lady Dimitrescu", 5, 20, 20, 4, 10, 100, Faction.NONE.name(), null, 0, enemyitems);
 	        map.add(new Room("room2", 2, "Estás en la casa dorada, al oeste de la casa blanca.", Direction.NOEXIT, Direction.NOEXIT, Direction.NOEXIT, 1, enemy, roomitems));
 	        enemy.setRoom(map.get(2));
 	        
 	        
 	        ArrayList<Item> enemyitems1 = new ArrayList<>();
-	        enemyitems1.add(new Item("Maza de troll", 1, false, true));
-	        enemy = new NPC("Troll de cueva", 9, 30, 30, 2, 0, 0, Faction.NONE.name(), null, 0, enemyitems1);
-	        map.add(new Room("room3", 3, "Estás en la cueva de los trolls, al norte de la casa blanca.", Direction.NOEXIT, 1, Direction.NOEXIT, Direction.NOEXIT, enemy));
+	        ArrayList<Item> roomitems3 = new ArrayList<>();
+	        roomitems3.add(new Item("Arcoescudo Inmortal", 1, true, true));
+	        roomitems3.add(new Item("Baile de la muerte", 1, true, true));
+	        enemyitems1.add(new Item("Cerbatana", 1, false, true));
+	        enemy = new NPC("Teemo", 7, 25, 25, 2, 0, 0, Faction.NONE.name(), null, 0, enemyitems1);
+	        map.add(new Room("room3", 3, "Estás en la cueva de los trolls, al norte de la casa blanca.", Direction.NOEXIT, 1, Direction.NOEXIT, Direction.NOEXIT, enemy, roomitems3));
 	        enemy.setRoom(map.get(3));
 	        
 	        ArrayList<Item> roomitems2 = new ArrayList<>();
 	        ArrayList<Item> enemyitems2 = new ArrayList<>();
 	        enemyitems2.add(new Item("Espadón del gran señor", 1, true, true));
 	        roomitems2.add(new Item("Humanidad", 2));
-	        enemy = new NPC("Gwyn", 8, 35, 35, 6, 0, 0, Faction.NONE.name(), null, 0, enemyitems2);
+	        enemy = new NPC("Gwyn", 7, 30, 30, 4, 0, 0, Faction.NONE.name(), null, 0, enemyitems2);
 	        map.add(new Room("room4", 4, "Has llegado a una cueva oscura. No ves casi nada, pero sabes que has venido desde el oeste.", 5, Direction.NOEXIT, 1, 5, enemy, roomitems2));
 	        enemy.setRoom(map.get(4));
 	        
 	        
-	        map.add(new Room("room5", 5, "Has llegado a la sala final. Enhorabuena.", Direction.NOEXIT, Direction.NOEXIT, 4, Direction.NOEXIT, null));
+	        map.add(new Room("room5", 5, "¡Has llegado a la sala del tesoro!. ¡Enhorabuena, has ganado!", Direction.NOEXIT, Direction.NOEXIT, 4, Direction.NOEXIT, null));
 	
 	        
 	        ArrayList<Item> items = new ArrayList<>();

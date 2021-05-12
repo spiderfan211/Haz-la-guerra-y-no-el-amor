@@ -81,19 +81,25 @@ public class Loop {
         
         do {
         	
-        	if(input != 1) {    		
-        		player.describeRoom();
-			}
         	
-        	try {
-	        	player.options();
-        	
-        		input = scan.nextInt();
-	        	scan.nextLine();
+        	if (player.getRoom().getIndex() != 5) {
+        		
+        		if(input != 1) {    		
+        			player.describeRoom();
+        		}
+	        	try {
+		        	player.options();
 	        	
-        	}catch(InputMismatchException e) {
-        		System.out.println("ERROR: Tipo erróneo");
-        		scan.nextLine();
+	        		input = scan.nextInt();
+		        	scan.nextLine();
+		        	
+	        	}catch(InputMismatchException e) {
+	        		System.out.println("ERROR: Tipo erróneo");
+	        		scan.nextLine();
+	        	}
+        	}else {
+        		System.out.println(player.getRoom().getDescription());
+        		input = 10;
         	}
         	switch( input ) {
         	case 1:
@@ -177,6 +183,7 @@ public class Loop {
 				} catch (InterruptedException e) {
 					System.out.println("La espera de 1 s ha dado algún error.");
 				}
+        		System.out.println("\nPulse cualquier tecla para continuar");
         		scan.nextLine();
         		break;
         	}
@@ -202,13 +209,14 @@ public class Loop {
 		if( i>=0 && i<n ) {
 			player.useItem(i);
 		}
+		else {
+			System.out.println("\nNo tienes un objeto disponible en ese slot");
+		}
 	}
 
 
 	private static void takeRoomItems() {
 		player.takeItemsFromRoom();
-		System.out.println("\n¡Has cogido los items del suelo! Han subido tus estadísticas");
-		
 	}
 
 
